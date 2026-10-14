@@ -21,8 +21,7 @@ pub struct CallRecord {
     pub volume_at_call: f64,
 }
 
-/// Accepts a Unix timestamp, a plain date string, or an ISO 8601 timestamp with variable-precision fractional seconds and a
-/// trailing Z (Gembot's actual format, e.g. "2026-09-02T20:16:30.212112Z" or "2026-09-02T01:07:49.68403Z", digit count varies row to row).
+/// Accepts a Unix timestamp, a plain date string, or an ISO 8601 timestamp with variable-precision fractional seconds and a trailing Z (Gembot's actual format, e.g. "2026-09-02T20:16:30.212112Z" or "2026-09-02T01:07:49.68403Z", digit count varies row to row).
 fn deserialize_timestamp<'de, D>(deserializer: D) -> Result<i64, D::Error>
 where D: Deserializer<'de> {
     let raw = String::deserialize(deserializer)?;
