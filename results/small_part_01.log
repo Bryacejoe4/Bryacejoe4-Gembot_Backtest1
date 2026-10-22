@@ -1,0 +1,1707 @@
+warning: fields `market_cap_at_call` and `volume_at_call` are never read
+  --> src/models.rs:18:9
+   |
+10 | pub struct CallRecord {
+   |            ---------- fields in this struct
+...
+18 |     pub market_cap_at_call: f64,
+   |         ^^^^^^^^^^^^^^^^^^
+...
+21 |     pub volume_at_call: f64,
+   |         ^^^^^^^^^^^^^^
+   |
+   = note: `CallRecord` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: fields `mint` and `tier` are never read
+  --> src/models.rs:75:9
+   |
+74 | pub struct SimResult {
+   |            --------- fields in this struct
+75 |     pub mint: String,
+   |         ^^^^
+76 |     pub tier: String,
+   |         ^^^^
+   |
+   = note: `SimResult` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: `gembot-backtest` (bin "gembot-backtest") generated 2 warnings
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.26s
+     Running `target/debug/gembot-backtest small_part_01.csv`
+Loaded 300 calls from small_part_01.csv
+
+--- [1/300] 7BLkYWuw (balanced) ---
+[1/300] 7BLkYWuwrSv9rW1eFqpmjhUHWbzY5sscszE3ahkkpump [balanced] pnl=-0.0625 SOL (-62.5%)  d15=-0.0628 d30=-0.0628  span=46.6h pts=246 failed=0
+--- [2/300] 8y16oHse (balanced) ---
+[2/300] 8y16oHsekNSNM38A6ZkN9yTJGQyFyye71P8y1KHopump [balanced] pnl=-0.0628 SOL (-62.8%)  d15=-0.0183 d30=-0.0983  span=47.1h pts=207 failed=0
+--- [3/300] Ci8pWuCV (balanced) ---
+[3/300] Ci8pWuCV7SLucszdTRHzDpQGzgiHrS8n3TZEiruWpump [balanced] pnl=-0.0167 SOL (-16.7%)  d15=-0.0956 d30=-0.0954  span=38.5h pts=242 failed=0
+--- [4/300] 2kuEPy7z (precision) ---
+[4/300] 2kuEPy7zQNcCXmmq8zjTUNMm1WRs5XzBC5VXgVo6pump [precision] pnl=-0.0177 SOL (-17.7%)  d15=-0.0617 d30=-0.0623  span=44.2h pts=215 failed=0
+--- [5/300] FBZqePqM (balanced) ---
+[5/300] FBZqePqMMfqs74SZaxbNu3Gsne6Ny9VSosNnWTAdpump [balanced] pnl=-0.0171 SOL (-17.1%)  d15=-0.0168 d30=-0.0169  span=46.0h pts=248 failed=0
+--- [6/300] 2ddMcFkj (precision) ---
+[6/300] 2ddMcFkjrhdpQhJ3ZmG4DyPnkF3wZ36heCrNRGoppump [precision] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (12 requests, 0 failed)
+--- [7/300] HaFY5Jua (balanced) ---
+[7/300] HaFY5Jua3pRFTiVNT1X9krAUgB4WG3zitKbQpd1aNspX [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [8/300] 3vD6LTH7 (balanced) ---
+[8/300] 3vD6LTH7Rvca5G4DcWwKAXWuZpcTrx4zN8KS81XvQxaW [balanced] pnl=-0.0145 SOL (-14.5%)  d15=-0.0146 d30=-0.0155  span=47.2h pts=286 failed=0
+--- [9/300] 6GewNzed (balanced) ---
+[9/300] 6GewNzedSYD8d4U87ekZzLCPmNTV9o9D8GrV5T3wkgP4 [balanced] pnl=-0.0173 SOL (-17.3%)  d15=-0.0174 d30=-0.0176  span=47.5h pts=147 failed=0
+--- [10/300] AxwSUUHx (balanced) ---
+[10/300] AxwSUUHx6hj8bgdtSxVUiKtKkZwmcDbNbEEtTvzfpump [balanced] pnl=-0.0175 SOL (-17.5%)  d15=-0.0113 d30=-0.0113  span=48.0h pts=185 failed=0
+--- [11/300] 3WVBzJsX (balanced) ---
+[11/300] 3WVBzJsX6v9as9F6WtmC1HMvmAXxqAfgqvDEzhPbJQGi [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [12/300] bttFLQwp (balanced) ---
+[12/300] bttFLQwpfrkk7y3GXLLPkTxuCQtFuH6cuKGWPysi8sn [balanced] pnl=-0.0184 SOL (-18.4%)  d15=-0.0632 d30=-0.0629  span=47.5h pts=205 failed=0
+--- [13/300] CHQeLyR3 (balanced) ---
+[13/300] CHQeLyR3kiywgkq6CQuTruNq64bi8RFUyLb3WCCX4iv7 [balanced] pnl=-0.0964 SOL (-96.4%)  d15=-0.0961 d30=-0.0962  span=41.8h pts=341 failed=0
+--- [14/300] A7iQ8N5j (balanced) ---
+[14/300] A7iQ8N5jKDrg1YUxJ7v8aN5AtkwJaUTNhq1jZ8YLFrAJ [balanced] pnl=-0.0019 SOL (-1.9%)  d15=-0.0437 d30=-0.0436  span=48.0h pts=170 failed=0
+--- [15/300] Fd91C4zZ (balanced) ---
+[15/300] Fd91C4zZ1dHnmrFKVEUbpvtau1nC4tmfWmbQRhp1pump [balanced] pnl=-0.0632 SOL (-63.2%)  d15=-0.0632 d30=-0.0632  span=47.5h pts=197 failed=0
+--- [16/300] 2kuEPy7z (conservative) ---
+[16/300] 2kuEPy7zQNcCXmmq8zjTUNMm1WRs5XzBC5VXgVo6pump [conservative] pnl=-0.0177 SOL (-17.7%)  d15=-0.0617 d30=-0.0623  span=44.2h pts=215 failed=0
+--- [17/300] 9oqTMkji (balanced) ---
+[17/300] 9oqTMkjixS4kRgMtFU648YBm74gCdVaAiVebEZ2cRjQS [balanced] pnl=-0.0383 SOL (-38.3%)  d15=-0.0377 d30=-0.0383  span=48.0h pts=297 failed=0
+--- [18/300] 65f3QLYZ (balanced) ---
+[18/300] 65f3QLYZhwA2Wd28iGXHtjK3MMtD2R2LUMkdCnapump [balanced] pnl=-0.0183 SOL (-18.3%)  d15=-0.0185 d30=-0.0185  span=47.7h pts=147 failed=0
+--- [19/300] 3Vx7yJSM (balanced) ---
+[19/300] 3Vx7yJSMWwBzYZtPtiBtfjAS6TxYttvLBCNzLRaJqGyW [balanced] pnl=-0.0189 SOL (-18.9%)  d15=-0.0637 d30=-0.0638  span=46.1h pts=206 failed=0
+--- [20/300] divVYQRK (balanced) ---
+[20/300] divVYQRKhTBYm2BSqRM4MBxJbEDQqxX1xh4SrxJaEFz [balanced] pnl=-0.0185 SOL (-18.5%)  d15=-0.0183 d30=-0.0183  span=46.1h pts=200 failed=0
+--- [21/300] 5V2LTDFK (balanced) ---
+[21/300] 5V2LTDFKa2TRMWp8UoYzG8oJbjLTu8Ud5X51eAbf8stA [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [22/300] Cf5oefTR (balanced) ---
+[22/300] Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (12 requests, 0 failed)
+--- [23/300] Hi421CWi (precision) ---
+[23/300] Hi421CWivcf6SKMq2v7LiwdGRCHrwa7qdMvbysZupump [precision] pnl=-0.0616 SOL (-61.6%)  d15=-0.0619 d30=-0.0620  span=47.9h pts=376 failed=0
+--- [24/300] 9nqzTJJr (balanced) ---
+[24/300] 9nqzTJJrhuiwKWYQ72h3DbuKXAQud1JsZ9rzVv4i4xhb [balanced] pnl=-0.0626 SOL (-62.6%)  d15=-0.0627 d30=-0.0628  span=47.0h pts=247 failed=0
+--- [25/300] 3DmF2srr (balanced) ---
+[25/300] 3DmF2srrZX1d47W1x7JQn49yk6QwEWoJBNkRvJ3Ppump [balanced] pnl=-0.0185 SOL (-18.5%)  d15=-0.0632 d30=-0.0633  span=46.6h pts=161 failed=0
+--- [26/300] JfPRaZtn (balanced) ---
+[26/300] JfPRaZtnCMod6jzE6rJnv1nVstnRMsDCyhTFmP4pump [balanced] pnl=-0.0976 SOL (-97.6%)  d15=-0.0967 d30=-0.0973  span=46.7h pts=117 failed=0
+--- [27/300] GCUvCs5n (balanced) ---
+[27/300] GCUvCs5nGtdmDrEaCuJPMH2Mf7Dv11YotTd4HNdaFF1t [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [28/300] 4h5d9ejz (balanced) ---
+[28/300] 4h5d9ejz8QSfzhAAVMLU5s9uFNzv3xmK6UuZK2PDpump [balanced] pnl=-0.0164 SOL (-16.4%)  d15=-0.0166 d30=-0.0164  span=48.0h pts=176 failed=0
+--- [29/300] CsaCDAnx (balanced) ---
+[29/300] CsaCDAnxVNc83eNxwyi6d4rKWyEcy68Xwf1g9ys6pump [balanced] pnl=-0.0183 SOL (-18.3%)  d15=-0.0631 d30=-0.0983  span=47.9h pts=230 failed=0
+--- [30/300] 7WG3cSP6 (balanced) ---
+[30/300] 7WG3cSP6DEtD1YwZHXqSfXJqaf7C7qAopcdXUPKmpump [balanced] pnl=-0.0633 SOL (-63.3%)  d15=-0.0634 d30=-0.0634  span=41.7h pts=82 failed=0
+--- [31/300] 8GVQG7Yi (balanced) ---
+[31/300] 8GVQG7YifLZ9cesTjhfB8EUVMPvpWFhCMW2UYJ5mjw9t [balanced] pnl=-0.0616 SOL (-61.6%)  d15=-0.0968 d30=-0.0968  span=46.7h pts=264 failed=0
+--- [32/300] 9eECz3PA (balanced) ---
+[32/300] 9eECz3PAyTTYr1YR8B41EAzGCk6bQW6BkFMovLpCpump [balanced] pnl=-0.0153 SOL (-15.3%)  d15=-0.0144 d30=-0.0138  span=48.0h pts=194 failed=0
+--- [33/300] 8ZkHMzd9 (balanced) ---
+[33/300] 8ZkHMzd9r91DBoGsZqn4F4rgRKGLDRpUcqHVM6RVpump [balanced] pnl=-0.0120 SOL (-12.0%)  d15=-0.0118 d30=-0.0118  span=47.8h pts=362 failed=0
+--- [34/300] DrK9ci66 (balanced) ---
+[34/300] DrK9ci66pPJxi9ig327XcVRs8cDzs7frXXoHWwwKvsN5 [balanced] pnl=-0.0607 SOL (-60.7%)  d15=-0.0169 d30=-0.0171  span=36.6h pts=216 failed=0
+--- [35/300] BiDSKQtb (balanced) ---
+[35/300] BiDSKQtbs2paLaw4foKuJiRiK4zB31TzoDyzbV1Q3qKs [balanced] pnl=-0.0638 SOL (-63.8%)  d15=-0.0638 d30=-0.0189  span=47.2h pts=208 failed=0
+--- [36/300] 4hmBjZ4N (balanced) ---
+[36/300] 4hmBjZ4NGG8HvVZridQ1ii7PKaFbw4CUMD2fudejpump [balanced] pnl=-0.0152 SOL (-15.2%)  d15=-0.0150 d30=-0.0152  span=47.9h pts=255 failed=0
+--- [37/300] GNq9jVow (balanced) ---
+[37/300] GNq9jVow6MayA3xM2AfGygh58gMu1vY6wajiXDXZCZu [balanced] pnl=-0.0110 SOL (-11.0%)  d15=-0.0106 d30=-0.0890  span=48.0h pts=143 failed=0
+--- [38/300] 26E6QuMq (balanced) ---
+[38/300] 26E6QuMq5QUA2n44pSoeMXDoAbEz8WaqFUNScYdfpump [balanced] pnl=-0.0967 SOL (-96.7%)  d15=-0.0967 d30=-0.0962  span=47.9h pts=178 failed=0
+--- [39/300] Ev5GAuTC (balanced) ---
+[39/300] Ev5GAuTCnN8RUEmWQkaLRtRP5rosEmKEerq6Wsxxpump [balanced] pnl=-0.0185 SOL (-18.5%)  d15=-0.0185 d30=-0.0185  span=38.4h pts=102 failed=0
+--- [40/300] 3e6to4qr (balanced) ---
+[40/300] 3e6to4qrHByU19Sij9DVKPB4AQD5RuyhH2Sj2ESLpump [balanced] pnl=-0.0088 SOL (-8.8%)  d15=-0.0061 d30=-0.0027  span=48.0h pts=357 failed=0
+--- [41/300] SEqxLB82 (balanced) ---
+[41/300] SEqxLB82AsvpCBCzKuPb17Rt3aCT7iANKVFK8fPioHs [balanced] pnl=-0.0981 SOL (-98.1%)  d15=-0.0982 d30=-0.0978  span=45.7h pts=202 failed=0
+--- [42/300] G9Cy1GrA (balanced) ---
+[42/300] G9Cy1GrAj1NRsi9xYMGfgNQFZyYyEZZr66FNYGLnpump [balanced] pnl=-0.0627 SOL (-62.7%)  d15=-0.0627 d30=-0.0975  span=45.9h pts=188 failed=0
+--- [43/300] 5y1ubEMK (balanced) ---
+[43/300] 5y1ubEMKvVFCqB8f6VBD5qn7X8kz6iD49gzUWpd2FLEX [balanced] pnl=-0.0183 SOL (-18.3%)  d15=-0.0632 d30=-0.0632  span=47.6h pts=171 failed=0
+--- [44/300] G1iAXxME (balanced) ---
+[44/300] G1iAXxMEsx6EwtPyw5mLgvWoZZVPhNKiHjimFti8pump [balanced] pnl=-0.0469 SOL (-46.9%)  d15=-0.0469 d30=-0.0795  span=48.0h pts=232 failed=0
+--- [45/300] 5Uh8h8fE (balanced) ---
+[45/300] 5Uh8h8fEGYCK6zifyWEWkrzBTcigWLebUnfU5Wvg6h3J [balanced] pnl=-0.0949 SOL (-94.9%)  d15=-0.0956 d30=-0.0956  span=48.0h pts=190 failed=0
+--- [46/300] 4U6B3U11 (balanced) ---
+[46/300] 4U6B3U11hozyxGZ8dKGarwZviXphJ5MjVyA9skGTGyAN [balanced] pnl=-0.0162 SOL (-16.2%)  d15=-0.0165 d30=-0.0605  span=47.8h pts=212 failed=0
+--- [47/300] 8EpfsKaU (balanced) ---
+[47/300] 8EpfsKaUp6iRyJZLZbDo5Y2Mma5UxJDCpf9qWq2kpump [balanced] pnl=-0.0181 SOL (-18.1%)  d15=-0.0180 d30=-0.0623  span=46.0h pts=226 failed=0
+--- [48/300] Ajrn7dKy (balanced) ---
+[48/300] Ajrn7dKyKRE6cCfcAaJnHWe9DA5z8NeYKGMjegrj6ALL [balanced] pnl=-0.0631 SOL (-63.1%)  d15=-0.0631 d30=-0.0631  span=47.7h pts=156 failed=0
+--- [49/300] 77xPMXy8 (balanced) ---
+[49/300] 77xPMXy8pDhbk35YiWzNCdnWkBR7XjLntS4QnvMspump [balanced] pnl=-0.0165 SOL (-16.5%)  d15=-0.0597 d30=-0.0944  span=43.4h pts=336 failed=0
+--- [50/300] mMHUFPJm (balanced) ---
+[50/300] mMHUFPJma7sGuFxYteoHJkfzb5iW6oLxsvVnUYfSTNK [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [51/300] EiTBcvpY (balanced) ---
+[51/300] EiTBcvpY2XzWkJ2mtZmJHf8hHQPwytVSWaAB414pVpR9 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [52/300] EBC4GKzu (balanced) ---
+[52/300] EBC4GKzu1NdKKNUGkFLT9GojvGo7e9dkeCGBbqYEhUKs [balanced] pnl=-0.0184 SOL (-18.4%)  d15=-0.0630 d30=-0.0185  span=45.7h pts=214 failed=0
+--- [53/300] 7LXaKFzp (balanced) ---
+[53/300] 7LXaKFzpJhZVwLHtQ6XYDk4oLDwpcq8rT8uKKPxipump [balanced] pnl=-0.0628 SOL (-62.8%)  d15=-0.0629 d30=-0.0629  span=46.6h pts=207 failed=0
+--- [54/300] 8krV6qsF (balanced) ---
+[54/300] 8krV6qsF2PwKCDhw2B6Jn8A8FfSMLawLpvA8MTePpump [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [55/300] 3uxzNhXq (balanced) ---
+[55/300] 3uxzNhXquXNh8Y2avyxS5CnJVrSrQSGF4Bqd8F5Nfz7X [balanced] pnl=-0.0626 SOL (-62.6%)  d15=-0.0625 d30=-0.0627  span=48.0h pts=131 failed=0
+--- [56/300] 4qTuQFoC (balanced) ---
+[56/300] 4qTuQFoCMQDJij6ZQZRHntC6sNMx9yHeyiG7GHngqHoY [balanced] pnl=-0.0178 SOL (-17.8%)  d15=-0.0177 d30=-0.0179  span=44.8h pts=201 failed=0
+--- [57/300] CNWxmoBS (balanced) ---
+[57/300] CNWxmoBSQZo2Sgp5KSAK5m9FwSqDbXQRP4CNMuoe78Gm [balanced] pnl=-0.0986 SOL (-98.6%)  d15=-0.0986 d30=-0.0986  span=48.0h pts=173 failed=0
+--- [58/300] 25WqFGy3 (balanced) ---
+[58/300] 25WqFGy3G86FvhrHEW9C16CchKT7ehLKq3pUXAdYpump [balanced] pnl=-0.0182 SOL (-18.2%)  d15=-0.0181 d30=-0.0628  span=45.1h pts=179 failed=0
+--- [59/300] Hi421CWi (conservative) ---
+[59/300] Hi421CWivcf6SKMq2v7LiwdGRCHrwa7qdMvbysZupump [conservative] pnl=-0.0620 SOL (-62.0%)  d15=-0.0963 d30=-0.0966  span=48.0h pts=315 failed=0
+--- [60/300] 4qxeVz5J (balanced) ---
+[60/300] 4qxeVz5JTsVuvejwAe2o8DFcuchKvwNjaqz1c5ubEAFo [balanced] pnl=-0.0976 SOL (-97.6%)  d15=-0.0978 d30=-0.0976  span=46.4h pts=177 failed=0
+--- [61/300] 4hMvdY7K (balanced) ---
+[61/300] 4hMvdY7KbsCzHnRE7Js6kNFyTdkqKMeTv9GPYD5ppump [balanced] pnl=-0.0530 SOL (-53.0%)  d15=-0.0530 d30=-0.0531  span=48.0h pts=106 failed=0
+--- [62/300] Cf5oefTR (precision) ---
+[62/300] Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump [precision] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (12 requests, 0 failed)
+--- [63/300] 67rVP2rx (balanced) ---
+[63/300] 67rVP2rxtgJR5kgHCmm1UwJNPuuemyhcng86J4WMyGXU [balanced] pnl=-0.0886 SOL (-88.6%)  d15=-0.0863 d30=-0.0837  span=47.9h pts=265 failed=0
+--- [64/300] 5yN9Zbpk (balanced) ---
+[64/300] 5yN9ZbpkLfmEriMRa4YCnMA4vGKWWj1kDameveL1pump [balanced] pnl=-0.0968 SOL (-96.8%)  d15=-0.0968 d30=-0.0968  span=48.0h pts=167 failed=0
+--- [65/300] 4t58A221 (balanced) ---
+[65/300] 4t58A221u1fMfxy3KgeZ8oRhQKQjTghUYFWZZ9rZpump [balanced] pnl=+0.0238 SOL (+23.8%)  d15=+0.0232 d30=+0.0252  span=36.7h pts=346 failed=0
+--- [66/300] 8thd7APG (balanced) ---
+[66/300] 8thd7APG9E1bwQgQ8DxHAA7GvM8cDQVpn6V42pqQpump [balanced] pnl=+0.0375 SOL (+37.5%)  d15=+0.0373 d30=+0.0376  span=48.0h pts=295 failed=0
+--- [67/300] DgxoKp2T (balanced) ---
+[67/300] DgxoKp2TkYY61vqsV8xoG3vrdFtJFhuLa25xzdXzpump [balanced] pnl=-0.0625 SOL (-62.5%)  d15=-0.0974 d30=-0.0972  span=47.9h pts=177 failed=0
+--- [68/300] 8ACkC3dZ (balanced) ---
+[68/300] 8ACkC3dZfbGbMKRfAKMetEqZzmvuG6ZLoLVCZ9Rw1zwr [balanced] pnl=-0.0616 SOL (-61.6%)  d15=-0.0970 d30=-0.0794  span=33.1h pts=111 failed=0
+--- [69/300] FstQsxUs (balanced) ---
+[69/300] FstQsxUszLcr6VDsq4e8msQ5t6HFU68RNGwRsJ8a7R1g [balanced] pnl=-0.0133 SOL (-13.3%)  d15=-0.0133 d30=-0.0133  span=38.8h pts=215 failed=0
+--- [70/300] xcoio7gu (balanced) ---
+[70/300] xcoio7guTWKAS38GY6TjcxmkTgsNBgri1geQAkGd2WJ [balanced] pnl=-0.0879 SOL (-87.9%)  d15=-0.0864 d30=-0.0864  span=39.0h pts=242 failed=0
+--- [71/300] CKNAaAgU (balanced) ---
+[71/300] CKNAaAgULzreuEvJ8C2hGuAPcxSUZmGHhXTos5E4FGdC [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [72/300] As7SfJTW (balanced) ---
+[72/300] As7SfJTWWiqxYwtbFcqQd2GT83k9Xr8X2G4ag4sEpump [balanced] pnl=-0.0573 SOL (-57.3%)  d15=-0.0129 d30=-0.0148  span=45.2h pts=226 failed=0
+--- [73/300] 7TRtkUGr (balanced) ---
+[73/300] 7TRtkUGrm7YAiADRgvbLf2PVEDBpZP8kMjLRkM5Rpump [balanced] pnl=-0.0627 SOL (-62.7%)  d15=-0.0628 d30=-0.0627  span=45.6h pts=231 failed=0
+--- [74/300] 8hxwxk7P (balanced) ---
+[74/300] 8hxwxk7PA6YPyHFK17uuwoZ4HEGnp8d1EVG339Tbpump [balanced] pnl=-0.0973 SOL (-97.3%)  d15=-0.0974 d30=-0.0977  span=47.3h pts=193 failed=0
+--- [75/300] gB4NTGkQ (balanced) ---
+[75/300] gB4NTGkQTgtXPZXbcP2Xhs2BoafkEFi1Z4MoriXpump [balanced] pnl=-0.0978 SOL (-97.8%)  d15=-0.0975 d30=-0.0975  span=47.2h pts=172 failed=0
+--- [76/300] 4RngpYCu (balanced) ---
+[76/300] 4RngpYCuoVsRLcUXrV4rXD7Ae2yGLiNf7TST4tNLpump [balanced] pnl=-0.0011 SOL (-1.1%)  d15=-0.0012 d30=-0.0012  span=40.9h pts=314 failed=0
+--- [77/300] ER5Mk4jK (balanced) ---
+[77/300] ER5Mk4jK2gpLSTneD14hHczodi3rsVU4mEGFaa9rQMjw [balanced] pnl=-0.0586 SOL (-58.6%)  d15=-0.0930 d30=-0.0597  span=47.9h pts=234 failed=0
+--- [78/300] EBsK6LyH (balanced) ---
+[78/300] EBsK6LyH8ZCF6aq2uD4fTkFHuPzA1DLUE7fLjMyJpump [balanced] pnl=-0.0362 SOL (-36.2%)  d15=-0.0621 d30=-0.0648  span=48.0h pts=109 failed=0
+--- [79/300] F46H2QLq (balanced) ---
+[79/300] F46H2QLqv9JznhJsMS2PgUFosPUVRVWDtQf94ynGpump [balanced] pnl=-0.0188 SOL (-18.8%)  d15=-0.0987 d30=-0.0989  span=46.1h pts=106 failed=0
+--- [80/300] Dy2SoHvU (balanced) ---
+[80/300] Dy2SoHvUF18XHYZ8prSBy5ckVtSxwdWcgrtBS2w1uSYN [balanced] pnl=-0.0166 SOL (-16.6%)  d15=-0.0605 d30=-0.0605  span=48.0h pts=228 failed=0
+--- [81/300] FhFvXUev (balanced) ---
+[81/300] FhFvXUevhR7qohajBW43oaDVqN4KmAcxgMBqtPZJUZDx [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [82/300] 27pbcjz2 (balanced) ---
+[82/300] 27pbcjz2K3u1HKcoaigftSJNEga8w5zxDvmQNK46YnkP [balanced] pnl=-0.0177 SOL (-17.7%)  d15=-0.0175 d30=-0.0178  span=47.2h pts=235 failed=0
+--- [83/300] ExjkXykd (balanced) ---
+[83/300] ExjkXykdvgfdLwta8cWXnhWkVk5a6pzydSDW2VJYqQvL [balanced] pnl=-0.0628 SOL (-62.8%)  d15=-0.0627 d30=-0.0975  span=47.9h pts=181 failed=0
+--- [84/300] 4bYzAJLe (balanced) ---
+[84/300] 4bYzAJLeJg6JhNFhTEnAXGb9avHPV6QJpHWJV4crpump [balanced] pnl=-0.0977 SOL (-97.7%)  d15=-0.0626 d30=-0.0181  span=45.0h pts=241 failed=0
+--- [85/300] 8eaTKu3h (balanced) ---
+[85/300] 8eaTKu3hpJwaLQbsVbUjAVt1CPCvwP3PfYHP8k5Ypump [balanced] pnl=-0.0160 SOL (-16.0%)  d15=-0.0945 d30=-0.0604  span=37.6h pts=226 failed=0
+--- [86/300] FUNDEDij (balanced) ---
+[86/300] FUNDEDijvSQqU1zwZ5jrGVSPJZVNTraJSo4kQttY7JTv [balanced] pnl=-0.0635 SOL (-63.5%)  d15=-0.0635 d30=-0.0634  span=47.6h pts=147 failed=0
+--- [87/300] Cf5oefTR (conservative) ---
+[87/300] Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump [conservative] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (12 requests, 0 failed)
+--- [88/300] HhBP2mXL (balanced) ---
+[88/300] HhBP2mXLmRXscuWiNKWTWg825TJTqpz5NJcX5A3LwLER [balanced] pnl=-0.0969 SOL (-96.9%)  d15=-0.0623 d30=-0.0971  span=47.5h pts=206 failed=0
+--- [89/300] 2Huhr8rH (balanced) ---
+[89/300] 2Huhr8rHzgsiVF9zB9dBjECKwF4Le9TzBCoye4qGpump [balanced] pnl=-0.0937 SOL (-93.7%)  d15=-0.0937 d30=-0.0938  span=48.0h pts=166 failed=0
+--- [90/300] CUFwEHj6 (balanced) ---
+[90/300] CUFwEHj6MTc7BTXP25cqCAuR11qHrGK31nV9LN5Kmb3 [balanced] pnl=-0.0624 SOL (-62.4%)  d15=-0.0623 d30=-0.0624  span=47.9h pts=206 failed=0
+--- [91/300] DFkrD8xD (balanced) ---
+[91/300] DFkrD8xDANHCwgp6fKr5EPVYE2CyFyY6fTrrXfiHJSdd [balanced] pnl=-0.0184 SOL (-18.4%)  d15=-0.0184 d30=-0.0181  span=46.6h pts=267 failed=0
+--- [92/300] 9EHm6JBJ (balanced) ---
+[92/300] 9EHm6JBJfxYghoxoj2gAepA4yc5x9jv4CCG5NWZzdwtb [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [93/300] EsR3JyV6 (balanced) ---
+[93/300] EsR3JyV62bXb7M6D9aV7XzxHTxTkuHSBnDzHEphJLzcT [balanced] pnl=-0.0629 SOL (-62.9%)  d15=-0.0183 d30=-0.0183  span=46.9h pts=100 failed=0
+--- [94/300] HhKGQ3YW (balanced) ---
+[94/300] HhKGQ3YWFCr6kQNFLKYoWzu9A2EBdRbd6ASb48T9pump [balanced] pnl=-0.0977 SOL (-97.7%)  d15=-0.0979 d30=-0.0977  span=47.6h pts=168 failed=0
+--- [95/300] zYiF3rA8 (balanced) ---
+[95/300] zYiF3rA8aWYUuDek3Z3po9NF4V5UDky5nji7Wr6pump [balanced] pnl=-0.0509 SOL (-50.9%)  d15=-0.0551 d30=-0.0286  span=48.0h pts=323 failed=0
+--- [96/300] CgPua3ju (balanced) ---
+[96/300] CgPua3juHhCyfSCBRMM8kuRjEvuvt4rf4UbFSE5spump [balanced] pnl=-0.0977 SOL (-97.7%)  d15=-0.0977 d30=-0.0630  span=43.7h pts=232 failed=0
+--- [97/300] fsnuqm67 (balanced) ---
+[97/300] fsnuqm67yp6nUBFYphAvvBoGfbEJXRFGwLFqRMMpump [balanced] pnl=-0.0626 SOL (-62.6%)  d15=-0.0977 d30=-0.0979  span=45.3h pts=196 failed=0
+--- [98/300] 4Fc8PwcB (balanced) ---
+[98/300] 4Fc8PwcBXEd6JcHus6YSBct3wdgn2XRf1Ey3DAfFedUC [balanced] pnl=-0.0985 SOL (-98.5%)  d15=-0.0988 d30=-0.0987  span=44.4h pts=116 failed=0
+--- [99/300] wWgKBVz5 (balanced) ---
+[99/300] wWgKBVz5dhvu6m8bLVDMjyYJ4pSDTd5ku45PyNiJYe2 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [100/300] 4rLL1jNA (balanced) ---
+[100/300] 4rLL1jNABtg6z6P9gJNQTk2jkbVwU514VHtf2xXopump [balanced] pnl=-0.0186 SOL (-18.6%)  d15=-0.0186 d30=-0.0633  span=43.3h pts=192 failed=0
+--- [101/300] 7k7J6BMj (balanced) ---
+[101/300] 7k7J6BMjMv1iXNuFGzv12ANoiDW6zx9ev6uea9QCyGAR [balanced] pnl=-0.0605 SOL (-60.5%)  d15=-0.0607 d30=-0.0606  span=47.9h pts=259 failed=0
+--- [102/300] Er5RuNhT (balanced) ---
+[102/300] Er5RuNhTEwJH5dHv9c3YGATjgkLCETH4dKazntyWEtXY [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [103/300] 3rGSot1D (balanced) ---
+[103/300] 3rGSot1DANawxJYQPhYuNPxrLwX3wjLqnqfRWQSPF7FE [balanced] pnl=-0.0962 SOL (-96.2%)  d15=-0.0962 d30=-0.0956  span=48.0h pts=221 failed=0
+--- [104/300] 5fz3ZxQe (balanced) ---
+[104/300] 5fz3ZxQeygnQ5ZUKR7RRrHuGm1oDXex48buYEM2T3hR7 [balanced] pnl=-0.0980 SOL (-98.0%)  d15=-0.0981 d30=-0.0979  span=47.1h pts=177 failed=0
+--- [105/300] GkE46G36 (balanced) ---
+[105/300] GkE46G36hvDPRQ9EbzpVJ9VMW2gkkYC4de3gvPadpump [balanced] pnl=-0.0630 SOL (-63.0%)  d15=-0.0631 d30=-0.0978  span=44.9h pts=199 failed=0
+--- [106/300] HJE2DEZX (balanced) ---
+[106/300] HJE2DEZXvErwUabTU16xzrS629qXVeVyTGvJYJVfpump [balanced] pnl=-0.0628 SOL (-62.8%)  d15=-0.0981 d30=-0.0978  span=47.0h pts=230 failed=0
+--- [107/300] HazBDUEr (balanced) ---
+[107/300] HazBDUEr3PCdJ4icNnXdg5zuVY9We5gjzrgs8pjjKkrJ [balanced] pnl=-0.0626 SOL (-62.6%)  d15=-0.0978 d30=-0.0979  span=47.8h pts=195 failed=0
+--- [108/300] 9AoKNzw8 (balanced) ---
+[108/300] 9AoKNzw8X4gktBG3R3AhZSJtd5yprJvyTvtBPha9GzL6 [balanced] pnl=-0.0912 SOL (-91.2%)  d15=-0.0894 d30=-0.0880  span=38.5h pts=207 failed=0
+--- [109/300] 6EDQfr9S (balanced) ---
+[109/300] 6EDQfr9SFncQNDznP6Bf54fS2chvoSJ5XSkaLSMogaVd [balanced] pnl=-0.0630 SOL (-63.0%)  d15=-0.0633 d30=-0.0984  span=47.1h pts=231 failed=0
+--- [110/300] ACQxHBwf (balanced) ---
+[110/300] ACQxHBwfVEXLYcfVsPtJVuMQ55bJAPh883WD1by4c5Sa [balanced] pnl=-0.0162 SOL (-16.2%)  d15=-0.0165 d30=-0.0162  span=48.0h pts=270 failed=0
+--- [111/300] 35ZaMxZ1 (balanced) ---
+[111/300] 35ZaMxZ19o79EcsKc635EsTCaM32iALvt6saGn47pump [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (14 requests, 0 failed)
+--- [112/300] XYFwUfeW (balanced) ---
+[112/300] XYFwUfeWmsrixLy4zk4w2mHnaGkzEmjvMZjUHU1pump [balanced] pnl=-0.0623 SOL (-62.3%)  d15=-0.0974 d30=-0.0971  span=47.2h pts=190 failed=0
+--- [113/300] FYuDikaj (balanced) ---
+[113/300] FYuDikaj6mZ4GyYHEG7yoEpw4TBPVHdZUWEsTJenJrMG [balanced] pnl=-0.0856 SOL (-85.6%)  d15=-0.0876 d30=-0.0851  span=48.0h pts=282 failed=0
+--- [114/300] H7odj4Uc (balanced) ---
+[114/300] H7odj4UcRPA4UNNjpqnjTHNh1zhp2pbayzrkgxPhpump [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (15 requests, 0 failed)
+--- [115/300] BpAmg4j2 (balanced) ---
+[115/300] BpAmg4j2N2oS3C7LzR6njhn8u9VNEiL8cPCmA1gj6rcg [balanced] pnl=-0.0972 SOL (-97.2%)  d15=-0.0972 d30=-0.0970  span=46.7h pts=226 failed=0
+--- [116/300] 2CPhCZqM (balanced) ---
+[116/300] 2CPhCZqMg94nZ59Qds3tQ2sS9L6rPMLs9MkzvQ6Kpump [balanced] pnl=-0.0627 SOL (-62.7%)  d15=-0.0974 d30=-0.0627  span=47.5h pts=254 failed=0
+--- [117/300] ES5kVscA (balanced) ---
+[117/300] ES5kVscAXiF9H9FK5crZZpYbLa4EmRA5rLYoPaLGpump [balanced] pnl=-0.0979 SOL (-97.9%)  d15=-0.0980 d30=-0.0981  span=42.2h pts=193 failed=0
+--- [118/300] BQtbEDcZ (balanced) ---
+[118/300] BQtbEDcZRciafnXk5t5pFFaAiDkBAGufsRV3Ms9GJbiU [balanced] pnl=-0.0620 SOL (-62.0%)  d15=-0.0618 d30=-0.0176  span=48.0h pts=243 failed=0
+--- [119/300] MhcRQ7kQ (balanced) ---
+[119/300] MhcRQ7kQsbtXmcUhAf1KVP1dF3M1bKXVNje1KTFpump [balanced] pnl=-0.0628 SOL (-62.8%)  d15=-0.0624 d30=-0.0628  span=45.9h pts=196 failed=0
+--- [120/300] 9mEW4vsV (balanced) ---
+[120/300] 9mEW4vsVNyHuDZHp5SfYNtGWC8o7HEbNt6fbXP4ypump [balanced] pnl=-0.0587 SOL (-58.7%)  d15=-0.0593 d30=-0.0593  span=47.8h pts=259 failed=0
+--- [121/300] 6v4XyHhH (balanced) ---
+[121/300] 6v4XyHhHj6uNsach9W4u59DntpdB7Q216E9fx37upump [balanced] pnl=+0.0011 SOL (+1.1%)  d15=+0.0017 d30=+0.0044  span=48.0h pts=314 failed=0
+--- [122/300] C1SmvbwW (balanced) ---
+[122/300] C1SmvbwWEZkCremPBW9pQtZBv4mPpvCbg5ep1VvgqAtx [balanced] pnl=-0.0178 SOL (-17.8%)  d15=-0.0178 d30=-0.0619  span=47.2h pts=290 failed=0
+--- [123/300] 2UYFf4eJ (balanced) ---
+[123/300] 2UYFf4eJjaw8pFwRf8AftBgC1Y1rheFnD9unMorgpump [balanced] pnl=-0.0979 SOL (-97.9%)  d15=-0.0977 d30=-0.0975  span=46.9h pts=170 failed=0
+--- [124/300] DHFQCKSr (balanced) ---
+[124/300] DHFQCKSrypN7eevHGUtgUFkGpmZijDMTLwxrgCsuwW4q [balanced] pnl=-0.0513 SOL (-51.3%)  d15=-0.0513 d30=-0.0116  span=47.9h pts=368 failed=0
+--- [125/300] 9mEW4vsV (precision) ---
+[125/300] 9mEW4vsVNyHuDZHp5SfYNtGWC8o7HEbNt6fbXP4ypump [precision] pnl=-0.0587 SOL (-58.7%)  d15=-0.0593 d30=-0.0593  span=47.8h pts=242 failed=0
+--- [126/300] 9gnfYsjg (balanced) ---
+[126/300] 9gnfYsjg8VfCy113u4PPvxsQngMzzvAGTM3zRTpupump [balanced] pnl=-0.0611 SOL (-61.1%)  d15=-0.0613 d30=-0.0612  span=47.8h pts=220 failed=0
+--- [127/300] 3pvu1Gey (balanced) ---
+[127/300] 3pvu1Gey7uA5sDaTi3D6q5Pgi2U24H92W4gsZfA9igXQ [balanced] pnl=-0.0627 SOL (-62.7%)  d15=-0.0629 d30=-0.0629  span=47.5h pts=197 failed=0
+--- [128/300] BeUAXnAo (balanced) ---
+[128/300] BeUAXnAoF1ip3kMLCpgdJ8WRQFTzntDkgfyVYyMwpump [balanced] pnl=-0.0640 SOL (-64.0%)  d15=-0.0640 d30=-0.0640  span=47.7h pts=231 failed=0
+--- [129/300] 8Kx4MiW5 (balanced) ---
+[129/300] 8Kx4MiW5noeXwi3CLQY3m6TxiYqq5pRM9hcXj4F4pump [balanced] pnl=-0.0175 SOL (-17.5%)  d15=-0.0175 d30=-0.0176  span=47.8h pts=207 failed=0
+--- [130/300] 9o4u2PWK (balanced) ---
+[130/300] 9o4u2PWKwnwXao8FyRGsJK6dS38a6iyBPZiqiXYapump [balanced] pnl=-0.0186 SOL (-18.6%)  d15=-0.0184 d30=-0.0985  span=45.7h pts=95 failed=0
+--- [131/300] 5hpJtD4q (balanced) ---
+[131/300] 5hpJtD4qvft1GBqu19v4s7GvLCSXKYt7hxrdKERBpump [balanced] pnl=-0.0184 SOL (-18.4%)  d15=-0.0186 d30=-0.0631  span=43.7h pts=267 failed=0
+--- [132/300] 2ddMcFkj (conservative) ---
+[132/300] 2ddMcFkjrhdpQhJ3ZmG4DyPnkF3wZ36heCrNRGoppump [conservative] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [133/300] 4Vur6RbG (balanced) ---
+[133/300] 4Vur6RbGdWjhFsfULJx8z8ACfpFC9d2wMYaY43Srpump [balanced] pnl=-0.0937 SOL (-93.7%)  d15=-0.0931 d30=-0.0925  span=36.1h pts=227 failed=0
+--- [134/300] 5JGNsptg (balanced) ---
+[134/300] 5JGNsptgyW1w6za6LacKdA3PLYnxhbMVnEGbYJC4pump [balanced] pnl=-0.0626 SOL (-62.6%)  d15=-0.0181 d30=-0.0978  span=47.8h pts=249 failed=0
+--- [135/300] Hd8mxPqf (balanced) ---
+[135/300] Hd8mxPqfUzgvsegZKjub3UDpKWPz7uDfUwGmXMU869zX [balanced] pnl=-0.0547 SOL (-54.7%)  d15=-0.0881 d30=-0.0558  span=46.2h pts=305 failed=0
+--- [136/300] xvxpMarR (balanced) ---
+[136/300] xvxpMarR69eBd41FkA4YaRAjTN3f5cvzPmzk3xaTaup [balanced] pnl=-0.0631 SOL (-63.1%)  d15=-0.0983 d30=-0.0983  span=47.3h pts=189 failed=0
+--- [137/300] 5bNqSYwW (balanced) ---
+[137/300] 5bNqSYwW3dPMtssF1PSihCS4ZiiZGe6edpuibBZhpump [balanced] pnl=-0.0958 SOL (-95.8%)  d15=-0.0957 d30=-0.0944  span=48.0h pts=243 failed=0
+--- [138/300] 74kYD4mh (balanced) ---
+[138/300] 74kYD4mhtWTxthsJ4w3sZL2pz8dCEk8CuJpxfAYMpump [balanced] pnl=-0.0971 SOL (-97.1%)  d15=-0.0949 d30=-0.0949  span=47.8h pts=282 failed=0
+--- [139/300] H9TrEvgT (balanced) ---
+[139/300] H9TrEvgTv9rLq2gf8v7LPrEYY5T55Jp57TkS2WNz5YZ6 [balanced] pnl=-0.0172 SOL (-17.2%)  d15=-0.0959 d30=-0.0961  span=46.8h pts=227 failed=0
+--- [140/300] C3NovCXx (balanced) ---
+[140/300] C3NovCXxSQxovczpRRyb3T7ZAX1Z87Bt5xNoFXsaQVt1 [balanced] pnl=-0.0968 SOL (-96.8%)  d15=-0.0969 d30=-0.0621  span=47.9h pts=188 failed=0
+--- [141/300] DTSnWMjH (balanced) ---
+[141/300] DTSnWMjHedLzcc2oVMpRzk1uankCF16v68PUmC65pump [balanced] pnl=-0.0852 SOL (-85.2%)  d15=-0.0850 d30=-0.0533  span=47.9h pts=210 failed=0
+--- [142/300] 2ubhzKPo (balanced) ---
+[142/300] 2ubhzKPouTyA3yrzo7DfptPvDHsr1NBUcYPvDkR3FNut [balanced] pnl=-0.0968 SOL (-96.8%)  d15=-0.0618 d30=-0.0619  span=47.5h pts=186 failed=0
+--- [143/300] HzWBsJ6q (balanced) ---
+[143/300] HzWBsJ6qQo7reGHfene1XeA9eeZXNCr3FE93QMTTpump [balanced] pnl=-0.0972 SOL (-97.2%)  d15=-0.0976 d30=-0.0976  span=46.4h pts=217 failed=0
+--- [144/300] 3ULoD6ff (balanced) ---
+[144/300] 3ULoD6ffRdG3B5Dndm1cQh7VNATqoitqQ1EVoAwWQZWk [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [145/300] BFt7QKEL (balanced) ---
+[145/300] BFt7QKEL81QGSUTQrXL2hLcZyviuhp3KL7qAsbAtpump [balanced] pnl=-0.0633 SOL (-63.3%)  d15=-0.0634 d30=-0.0635  span=47.7h pts=211 failed=0
+--- [146/300] 8XTUnXmS (balanced) ---
+[146/300] 8XTUnXmSRP42ZVf4MyDVxAEQ6djzUpqXzywob6mLpump [balanced] pnl=-0.0977 SOL (-97.7%)  d15=-0.0628 d30=-0.0980  span=45.2h pts=186 failed=0
+--- [147/300] fsnuqm67 (precision) ---
+[147/300] fsnuqm67yp6nUBFYphAvvBoGfbEJXRFGwLFqRMMpump [precision] pnl=-0.0630 SOL (-63.0%)  d15=-0.0978 d30=-0.0978  span=45.3h pts=191 failed=0
+--- [148/300] 9eciHjJo (balanced) ---
+[148/300] 9eciHjJopku15zkke5GGdpPdfsDTqsfhQA9EibrApump [balanced] pnl=-0.0883 SOL (-88.3%)  d15=-0.0889 d30=-0.0886  span=47.9h pts=267 failed=0
+--- [149/300] DcCSuU3D (balanced) ---
+[149/300] DcCSuU3DFtaCUi1Xa8U2PmdWWKJS5wjNCDkNq6Qcpump [balanced] pnl=-0.0634 SOL (-63.4%)  d15=-0.0985 d30=-0.0986  span=44.3h pts=184 failed=0
+--- [150/300] GxVwjZjh (balanced) ---
+[150/300] GxVwjZjhAve6J8maGbwm8krzWB3Qgo33FXR7fweZpump [balanced] pnl=-0.0973 SOL (-97.3%)  d15=-0.0972 d30=-0.0973  span=46.8h pts=266 failed=0
+--- [151/300] 5fR7Qj7X (balanced) ---
+[151/300] 5fR7Qj7XPQV5yQ79Zzyj8E28oCgCBx7BUB27Xz6Ppump [balanced] pnl=-0.0972 SOL (-97.2%)  d15=-0.0970 d30=-0.0971  span=46.1h pts=205 failed=0
+--- [152/300] 2ecWevfy (balanced) ---
+[152/300] 2ecWevfy9REp1PavdEqC2RTYFeYaEbVsU2ja2Njibuzz [balanced] pnl=-0.0969 SOL (-96.9%)  d15=-0.0968 d30=-0.0968  span=47.6h pts=211 failed=0
+--- [153/300] GqwEctFs (balanced) ---
+[153/300] GqwEctFskdnAjrG3WKE6AgUqswxYNADm7MwrHigfpump [balanced] pnl=-0.0604 SOL (-60.4%)  d15=-0.0950 d30=-0.0948  span=48.0h pts=210 failed=0
+--- [154/300] 4ACbbGX8 (balanced) ---
+[154/300] 4ACbbGX85cBkrTUTGTTEKB1L7CTmfbwuvMpKvf1Kpump [balanced] pnl=-0.0629 SOL (-62.9%)  d15=-0.0980 d30=-0.0980  span=46.1h pts=163 failed=0
+--- [155/300] GkE46G36 (precision) ---
+[155/300] GkE46G36hvDPRQ9EbzpVJ9VMW2gkkYC4de3gvPadpump [precision] pnl=-0.0632 SOL (-63.2%)  d15=-0.0980 d30=-0.0981  span=44.9h pts=196 failed=0
+--- [156/300] 3RLe3pfH (balanced) ---
+[156/300] 3RLe3pfHSv2KpPTzPmS4hLzWyjPSCXhP3ZaFQ7Rxi18j [balanced] pnl=-0.0545 SOL (-54.5%)  d15=-0.0412 d30=-0.0394  span=47.9h pts=324 failed=0
+--- [157/300] 9Dog1iTi (balanced) ---
+[157/300] 9Dog1iTiReBKbttQ5jo67G6zdXCjRRbLTb2GvQCwpump [balanced] pnl=-0.0623 SOL (-62.3%)  d15=-0.0623 d30=-0.0623  span=47.2h pts=215 failed=0
+--- [158/300] HakuGJo7 (balanced) ---
+[158/300] HakuGJo7Sfxvcxxt32MYY3irQBQoeKC8jDtwZURYpump [balanced] pnl=-0.0976 SOL (-97.6%)  d15=-0.0976 d30=-0.0977  span=45.9h pts=47 failed=0
+--- [159/300] EwoHciwR (balanced) ---
+[159/300] EwoHciwRuKoJuGsjf9AD3Pw7Cm4cUBk8mSd9n49Npump [balanced] pnl=-0.0621 SOL (-62.1%)  d15=-0.0621 d30=-0.0621  span=46.9h pts=338 failed=0
+--- [160/300] 42pb6W54 (balanced) ---
+[160/300] 42pb6W54vpYt4WGMwZ57Wz4TedsoydKVgHFgjjnip1pa [balanced] pnl=-0.0920 SOL (-92.0%)  d15=-0.0916 d30=-0.0916  span=41.5h pts=198 failed=0
+--- [161/300] ZTaLTJs3 (balanced) ---
+[161/300] ZTaLTJs3oz4U8Rb4Njz2kjTNbC8tE2mdqVbg77npump [balanced] pnl=-0.0976 SOL (-97.6%)  d15=-0.0978 d30=-0.0977  span=46.2h pts=188 failed=0
+--- [162/300] A3N4eqVn (balanced) ---
+[162/300] A3N4eqVn1e44nYpaYAtvuvfjCg6MLpz1vMKS67vspump [balanced] pnl=-0.0979 SOL (-97.9%)  d15=-0.0182 d30=-0.0979  span=46.1h pts=80 failed=0
+--- [163/300] 6sPYBcVx (balanced) ---
+[163/300] 6sPYBcVxbudw4V2bgDrGvtAQ38mccTtcVUasEDhZ78qt [balanced] pnl=-0.0497 SOL (-49.7%)  d15=-0.0497 d30=-0.0513  span=47.9h pts=282 failed=0
+--- [164/300] 5NP3pTMg (balanced) ---
+[164/300] 5NP3pTMgbvioJaki2Sdxm7DiaA2tt3BFkqTJyYNF5EwQ [balanced] pnl=-0.0891 SOL (-89.1%)  d15=-0.0561 d30=-0.0561  span=45.7h pts=179 failed=0
+--- [165/300] GqwEctFs (precision) ---
+[165/300] GqwEctFskdnAjrG3WKE6AgUqswxYNADm7MwrHigfpump [precision] pnl=-0.0603 SOL (-60.3%)  d15=-0.0952 d30=-0.0947  span=48.0h pts=208 failed=0
+--- [166/300] Ad881Pyc (balanced) ---
+[166/300] Ad881PycCzmgVmSvuvynMVQnhN929QDVykLf9iNLpump [balanced] pnl=-0.0636 SOL (-63.6%)  d15=-0.0636 d30=-0.0987  span=47.4h pts=222 failed=0
+--- [167/300] 2AHiQRHX (balanced) ---
+[167/300] 2AHiQRHXW9paYDhmErpNgfPnqH1eBMyrAfAdXLSipump [balanced] pnl=-0.0969 SOL (-96.9%)  d15=-0.0969 d30=-0.0968  span=47.8h pts=193 failed=0
+--- [168/300] 26BHS3ex (balanced) ---
+[168/300] 26BHS3exWAEjaaxfFE1CenbJxVbCw6GMz4ibugt9pump [balanced] pnl=-0.0184 SOL (-18.4%)  d15=-0.0979 d30=-0.0978  span=39.6h pts=64 failed=0
+--- [169/300] FKb2KKTs (balanced) ---
+[169/300] FKb2KKTsp1mSyHw5aarmGA1YpgARPudRfbXdHznepump [balanced] pnl=-0.0630 SOL (-63.0%)  d15=-0.0982 d30=-0.0981  span=46.3h pts=167 failed=0
+--- [170/300] H5moUdxQ (balanced) ---
+[170/300] H5moUdxQz4fvFCoyiEG2MzNfmzTGiiJLfzFKanG5svKX [balanced] pnl=-0.0911 SOL (-91.1%)  d15=-0.0911 d30=-0.0899  span=48.0h pts=260 failed=0
+--- [171/300] 3EAX8K22 (balanced) ---
+[171/300] 3EAX8K22K3P3Z8JGUcuPbuwtQTcf5ddURo2LdGq2cryp [balanced] pnl=-0.0978 SOL (-97.8%)  d15=-0.0627 d30=-0.0980  span=47.7h pts=168 failed=0
+--- [172/300] B8pR169G (balanced) ---
+[172/300] B8pR169GuJG3tncFTxu6U48H1fBur4j8FgaxsEevaM4M [balanced] pnl=-0.0625 SOL (-62.5%)  d15=-0.0973 d30=-0.0973  span=47.2h pts=198 failed=0
+--- [173/300] 7XLNdfeN (balanced) ---
+[173/300] 7XLNdfeNXmXMnMcQuUqJUzi6ah8pHpndKhwhxbsDUFL3 [balanced] pnl=-0.0976 SOL (-97.6%)  d15=-0.0978 d30=-0.0975  span=46.5h pts=206 failed=0
+--- [174/300] 83CC2cuf (balanced) ---
+[174/300] 83CC2cufFWPQHzkB8gcpYawPwrvMXazoXDE9CEMWpump [balanced] pnl=-0.0976 SOL (-97.6%)  d15=-0.0976 d30=-0.0976  span=37.1h pts=177 failed=0
+--- [175/300] FKb2KKTs (precision) ---
+[175/300] FKb2KKTsp1mSyHw5aarmGA1YpgARPudRfbXdHznepump [precision] pnl=-0.0630 SOL (-63.0%)  d15=-0.0982 d30=-0.0981  span=46.3h pts=167 failed=0
+--- [176/300] 5ibhibvF (balanced) ---
+[176/300] 5ibhibvF2VHnyizcrrcZp3PM2zrttosvibomMtex8tSK [balanced] pnl=-0.0974 SOL (-97.4%)  d15=-0.0969 d30=-0.0950  span=46.6h pts=200 failed=0
+--- [177/300] EnGnwy5k (balanced) ---
+[177/300] EnGnwy5koQkE8i2HLAfmNqyCmjdPhyG12yyPutTQpump [balanced] pnl=-0.0970 SOL (-97.0%)  d15=-0.0972 d30=-0.0971  span=47.9h pts=201 failed=0
+--- [178/300] bmpaAQGS (balanced) ---
+[178/300] bmpaAQGSVsu4vbd2cT7hsVCoMkMmjC3ZMhRpuefpump [balanced] pnl=-0.0983 SOL (-98.3%)  d15=-0.0982 d30=-0.0981  span=45.9h pts=155 failed=0
+--- [179/300] 2oYchSWC (balanced) ---
+[179/300] 2oYchSWCXvbi5W6vPaJD3hgpqrLrU8TdQ8hPLJhAUavz [balanced] pnl=-0.0866 SOL (-86.6%)  d15=-0.0859 d30=-0.0861  span=36.1h pts=354 failed=0
+--- [180/300] DemN5N4f (balanced) ---
+[180/300] DemN5N4frwggrxjnLeuasKBovoVUhyKFPhG5cHGZpump [balanced] pnl=-0.0964 SOL (-96.4%)  d15=-0.0962 d30=-0.0956  span=47.3h pts=220 failed=0
+--- [181/300] 4io5KiYS (precision) ---
+[181/300] 4io5KiYScZS89bQqDVoGkmvyXY4RsQXs8WcLe758J9jX [precision] pnl=-0.0578 SOL (-57.8%)  d15=-0.0574 d30=-0.0574  span=36.3h pts=227 failed=0
+--- [182/300] DXozZnWK (balanced) ---
+[182/300] DXozZnWKDZTLDyejFekQqP8fpGLq61k7KdxaLZy8PUqU [balanced] pnl=-0.0973 SOL (-97.3%)  d15=-0.0972 d30=-0.0973  span=48.0h pts=236 failed=0
+--- [183/300] HswZQAWS (balanced) ---
+[183/300] HswZQAWSwFkGDbqUkFVodXPpDaCVpouEuKq7i7hdyout [balanced] pnl=-0.0630 SOL (-63.0%)  d15=-0.0630 d30=-0.0631  span=43.7h pts=155 failed=0
+--- [184/300] FY6kgo5j (balanced) ---
+[184/300] FY6kgo5jvUJV1ddz8XoveZraM5u6UkrVqgMrqJhypump [balanced] pnl=-0.0539 SOL (-53.9%)  d15=-0.0561 d30=-0.0878  span=45.0h pts=218 failed=0
+--- [185/300] EfGrSKGe (balanced) ---
+[185/300] EfGrSKGexKszbUWLKT2XHvVMncxgCi3xAPTVYjKdpump [balanced] pnl=-0.0544 SOL (-54.4%)  d15=-0.0125 d30=-0.0557  span=46.5h pts=245 failed=0
+--- [186/300] CtjPQSDX (balanced) ---
+[186/300] CtjPQSDXTwUEs1mv72KeMCMNGW8WYXzHGofbU99wV4hm [balanced] pnl=-0.0955 SOL (-95.5%)  d15=-0.0950 d30=-0.0948  span=47.9h pts=224 failed=0
+--- [187/300] 69fmNNTk (balanced) ---
+[187/300] 69fmNNTkyAfWSTG5Fs86cULWC3bBxLxkY4mM88Ptpump [balanced] pnl=-0.0629 SOL (-62.9%)  d15=-0.0977 d30=-0.0979  span=47.9h pts=146 failed=0
+--- [188/300] ExY678iD (balanced) ---
+[188/300] ExY678iDsPquXQ6mugQv7HK4LYLWov47pPN4dY97pump [balanced] pnl=-0.0964 SOL (-96.4%)  d15=-0.0962 d30=-0.0941  span=47.9h pts=205 failed=0
+--- [189/300] 8gdYSwpd (balanced) ---
+[189/300] 8gdYSwpdhgGLfskC4P7A2xvjHSBjjBVx5Exw7yCYBVy3 [balanced] pnl=-0.0635 SOL (-63.5%)  d15=-0.0635 d30=-0.0987  span=47.9h pts=225 failed=0
+--- [190/300] 2QjuLTP2 (balanced) ---
+[190/300] 2QjuLTP2BqEZozJagNQazSTB3LsZ6mhkijHiQ5vGLkUw [balanced] pnl=-0.0975 SOL (-97.5%)  d15=-0.0975 d30=-0.0975  span=44.3h pts=213 failed=0
+--- [191/300] 6wRM3pvV (balanced) ---
+[191/300] 6wRM3pvVa3JLW4UtzVn5uvXiUtPCXrDpLPYkEffapump [balanced] pnl=-0.0629 SOL (-62.9%)  d15=-0.0627 d30=-0.0627  span=47.8h pts=246 failed=0
+--- [192/300] 8xwevGtF (balanced) ---
+[192/300] 8xwevGtFghaff83B4tQNAkdzoAjNuQ5GMKxYY75MfZhu [balanced] pnl=-0.0631 SOL (-63.1%)  d15=-0.0628 d30=-0.0982  span=44.3h pts=129 failed=0
+--- [193/300] 9dWDjBdi (balanced) ---
+[193/300] 9dWDjBdiA186JVEKLvHCSbKaMZqLqrkW9WJ8j5S6pump [balanced] pnl=-0.0626 SOL (-62.6%)  d15=-0.0628 d30=-0.0975  span=47.7h pts=194 failed=0
+--- [194/300] GijeN8hA (balanced) ---
+[194/300] GijeN8hAGXrhdigBzQRNXTN4n9vCMhoAm2DJogKebUQ [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [195/300] 3XQkccyA (balanced) ---
+[195/300] 3XQkccyAHi3ifYv9kRi5hfcfSpvWcY3xpWBJWpjLpump [balanced] pnl=-0.0978 SOL (-97.8%)  d15=-0.0967 d30=-0.0967  span=47.7h pts=158 failed=0
+--- [196/300] FKb2KKTs (conservative) ---
+[196/300] FKb2KKTsp1mSyHw5aarmGA1YpgARPudRfbXdHznepump [conservative] pnl=-0.0630 SOL (-63.0%)  d15=-0.0983 d30=-0.0981  span=46.3h pts=152 failed=0
+--- [197/300] CnJoLNyH (balanced) ---
+[197/300] CnJoLNyHpgVqNWBPcdp4bBoZz4ZBwPi6tHuLtLtaSSmb [balanced] pnl=-0.0988 SOL (-98.8%)  d15=-0.0990 d30=-0.0987  span=43.4h pts=160 failed=0
+--- [198/300] 3bxAxGyQ (balanced) ---
+[198/300] 3bxAxGyQunUjz5JEvfYgEBkjfwX13q47tndwFwbyZJvC [balanced] pnl=+0.0210 SOL (+21.0%)  d15=+0.0145 d30=+0.0229  span=47.8h pts=294 failed=0
+--- [199/300] E1jYBKsG (balanced) ---
+[199/300] E1jYBKsG26eeUmv5eMBiDxN17incYPYWtqm9SQjsr1CQ [balanced] pnl=-0.0964 SOL (-96.4%)  d15=-0.0617 d30=-0.0963  span=47.7h pts=226 failed=0
+--- [200/300] 8F32oW8z (balanced) ---
+[200/300] 8F32oW8zuwzRRGjkUH1NwE8RWsxvRapcg5MwRFpRTX26 [balanced] pnl=-0.0964 SOL (-96.4%)  d15=-0.0961 d30=-0.0960  span=47.9h pts=288 failed=0
+--- [201/300] 4osEVzCc (balanced) ---
+[201/300] 4osEVzCczEYnD7szRGRrqwk7YQQoWiQZ3f1zYgbxpump [balanced] pnl=-0.0554 SOL (-55.4%)  d15=-0.0555 d30=-0.0554  span=47.2h pts=273 failed=0
+--- [202/300] 5JGNsptg (precision) ---
+[202/300] 5JGNsptgyW1w6za6LacKdA3PLYnxhbMVnEGbYJC4pump [precision] pnl=-0.0628 SOL (-62.8%)  d15=-0.0627 d30=-0.0981  span=47.8h pts=212 failed=0
+--- [203/300] 2FA3TvPu (balanced) ---
+[203/300] 2FA3TvPuPqurjZayzMcyJfav8W6fDjpH8yCX8nMPJyDJ [balanced] pnl=-0.0979 SOL (-97.9%)  d15=-0.0978 d30=-0.0978  span=46.2h pts=131 failed=0
+--- [204/300] F8rFVpXY (balanced) ---
+[204/300] F8rFVpXYtsEchbAfKChpTKAjBbtVyCnpX2yy5i7Bpump [balanced] pnl=-0.0975 SOL (-97.5%)  d15=-0.0976 d30=-0.0977  span=47.0h pts=246 failed=0
+--- [205/300] 4io5KiYS (balanced) ---
+[205/300] 4io5KiYScZS89bQqDVoGkmvyXY4RsQXs8WcLe758J9jX [balanced] pnl=-0.0580 SOL (-58.0%)  d15=-0.0581 d30=-0.0574  span=36.3h pts=234 failed=0
+--- [206/300] Ej3dwnKL (balanced) ---
+[206/300] Ej3dwnKLYsYFSAHXw4k3s9EQM1KGJkYSHtDrunCjQjru [balanced] pnl=-0.0628 SOL (-62.8%)  d15=-0.0980 d30=-0.0983  span=47.5h pts=178 failed=0
+--- [207/300] Di85N4ji (balanced) ---
+[207/300] Di85N4ji3btFSnEVSi7vjBP5eEXiencPz7D11pgardhr [balanced] pnl=-0.0621 SOL (-62.1%)  d15=-0.0968 d30=-0.0965  span=47.8h pts=201 failed=0
+--- [208/300] CtSNH5Qn (balanced) ---
+[208/300] CtSNH5Qnb2sN8yjwDgPCkQLNPU2DF6Kk5CuLy6WQmvC6 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [209/300] HsUQhRre (balanced) ---
+[209/300] HsUQhRregk8ZR9QqEXvjyrZP15rwj4au7VdXWt72pump [balanced] pnl=-0.0619 SOL (-61.9%)  d15=-0.0622 d30=-0.0621  span=44.6h pts=233 failed=0
+--- [210/300] 9vy3vFYJ (balanced) ---
+[210/300] 9vy3vFYJRayp73MHpQsNRwnCoDRiVhAiYAyWGKXQxsyV [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [211/300] 32mZfywm (balanced) ---
+[211/300] 32mZfywmvXzRffeaPWWKRDA1Fcy5RST9YTiqNBkhpump [balanced] pnl=-0.0972 SOL (-97.2%)  d15=-0.0966 d30=-0.0971  span=46.6h pts=196 failed=0
+--- [212/300] HRXEKvAu (balanced) ---
+[212/300] HRXEKvAuz3Y1uocPtwRHezC5UAtNuD9X9kfyiSPuvMYb [balanced] pnl=-0.0977 SOL (-97.7%)  d15=-0.0976 d30=-0.0977  span=44.4h pts=169 failed=0
+--- [213/300] ZqBhTgEE (balanced) ---
+[213/300] ZqBhTgEEtxpqPct8RH7ynPzVRo3b3fXP9MjL175pump [balanced] pnl=-0.0631 SOL (-63.1%)  d15=-0.0627 d30=-0.0631  span=47.9h pts=79 failed=0
+--- [214/300] CauBax2L (balanced) ---
+[214/300] CauBax2LYd2rLaLMaFRhgCzreTw3XbC6ErbbhE7jPpja [balanced] pnl=-0.0606 SOL (-60.6%)  d15=-0.0606 d30=-0.0611  span=47.9h pts=242 failed=0
+--- [215/300] H7L3oDyy (balanced) ---
+[215/300] H7L3oDyyQBhcHM5CRu8ndbVLMSQMBZotnJisPzVfhyZZ [balanced] pnl=-0.0972 SOL (-97.2%)  d15=-0.0972 d30=-0.0974  span=42.7h pts=175 failed=0
+--- [216/300] 5ZmV93QL (balanced) ---
+[216/300] 5ZmV93QLXmoaTjo4tp8HLWQC1La9u72ncb8hjn7zpump [balanced] pnl=-0.0608 SOL (-60.8%)  d15=-0.0946 d30=-0.0609  span=41.3h pts=338 failed=0
+--- [217/300] HkKLwqPZ (balanced) ---
+[217/300] HkKLwqPZML4g3kFUxymWMvodN4THFNdoUiHbpSqApump [balanced] pnl=-0.0627 SOL (-62.7%)  d15=-0.0979 d30=-0.0978  span=47.0h pts=136 failed=0
+--- [218/300] 4vYNt561 (balanced) ---
+[218/300] 4vYNt561GoSr4MJMJo1DTqMw6qVykncxw1E78DiXpump [balanced] pnl=-0.0511 SOL (-51.1%)  d15=-0.0511 d30=-0.0522  span=48.0h pts=259 failed=0
+--- [219/300] 36j5MKbc (balanced) ---
+[219/300] 36j5MKbcNyd9vjHePhZLu8rNt7RXW2HU89sKyVvApump [balanced] pnl=-0.0596 SOL (-59.6%)  d15=-0.0938 d30=-0.0938  span=48.0h pts=227 failed=0
+--- [220/300] DpHfXmbi (balanced) ---
+[220/300] DpHfXmbiPiqcA8agUnzEttFQg968xxhYBsvUivQbmoyp [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [221/300] 8ybhnjBa (balanced) ---
+[221/300] 8ybhnjBaYBWWV353huZ6LjsYEqJEBM2JEkWRKFyxpump [balanced] pnl=-0.0991 SOL (-99.1%)  d15=-0.0989 d30=-0.0976  span=45.7h pts=198 failed=0
+--- [222/300] AjnPeDYE (balanced) ---
+[222/300] AjnPeDYEXH3FHR43ygN9Z5aNNMQVqkXpyQVAX6Ppump [balanced] pnl=-0.0968 SOL (-96.8%)  d15=-0.0972 d30=-0.0972  span=47.7h pts=169 failed=0
+--- [223/300] 4JGAe6q4 (balanced) ---
+[223/300] 4JGAe6q4DjJLFrerLufsZ22njUzJXopeWTGEbR5Gpump [balanced] pnl=-0.0624 SOL (-62.4%)  d15=-0.0971 d30=-0.0970  span=47.9h pts=263 failed=0
+--- [224/300] 8buvs18C (balanced) ---
+[224/300] 8buvs18CsfSefSKfgYkkzybgTXeLqQ3ZkcdJVdi3joQu [balanced] pnl=-0.0979 SOL (-97.9%)  d15=-0.0976 d30=-0.0975  span=44.6h pts=157 failed=0
+--- [225/300] 87FMmVdz (balanced) ---
+[225/300] 87FMmVdzWCwYTHUGvDYJhjz8Lcj5WRbGK6sDXJfTpump [balanced] pnl=-0.0626 SOL (-62.6%)  d15=-0.0974 d30=-0.0626  span=47.9h pts=195 failed=0
+--- [226/300] 6pei4VZg (balanced) ---
+[226/300] 6pei4VZghASa2zCq64UEknBE7r3asoPLFNvsDRWhR358 [balanced] pnl=-0.0630 SOL (-63.0%)  d15=-0.0185 d30=-0.0185  span=47.3h pts=197 failed=0
+--- [227/300] 6E8UmPnQ (balanced) ---
+[227/300] 6E8UmPnQVsYD7utPUbZdGBowisR41HFyehB4NtREpump [balanced] pnl=-0.0635 SOL (-63.5%)  d15=-0.0186 d30=-0.0186  span=46.1h pts=175 failed=0
+--- [228/300] DDCimetG (balanced) ---
+[228/300] DDCimetG22tCrpsPHxoUFuzewU9EvtDp8RMAyCCoBTgj [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [229/300] DgACXKn6 (balanced) ---
+[229/300] DgACXKn6kSopTrFAyAwvGaeTKicrqWzLvXRYuvKGpump [balanced] pnl=-0.0972 SOL (-97.2%)  d15=-0.0969 d30=-0.0972  span=45.2h pts=222 failed=0
+--- [230/300] AciZNVav (balanced) ---
+[230/300] AciZNVavjShSqBAWYJykVaEtBwuPrNyKCGqk8EA374tX [balanced] pnl=-0.0626 SOL (-62.6%)  d15=-0.0624 d30=-0.0973  span=47.0h pts=181 failed=0
+--- [231/300] FwJNkgud (balanced) ---
+[231/300] FwJNkgud84vQNq3zPycwhD6RAqSTP43f9HiVyKwJpump [balanced] pnl=-0.0968 SOL (-96.8%)  d15=-0.0968 d30=-0.0973  span=47.4h pts=260 failed=0
+--- [232/300] 9nrUsqcE (balanced) ---
+[232/300] 9nrUsqcEPptS3gXQ1RJdHza1wQtAjuP6wqKWW2gdMBkh [balanced] pnl=-0.0631 SOL (-63.1%)  d15=-0.0631 d30=-0.0983  span=46.6h pts=180 failed=0
+--- [233/300] 4xjvmiKa (balanced) ---
+[233/300] 4xjvmiKa5vzkQtaNrTV17v8PFU5mP69Hf1Kq5A9wpump [balanced] pnl=-0.0969 SOL (-96.9%)  d15=-0.0623 d30=-0.0620  span=47.5h pts=219 failed=0
+--- [234/300] FgU8hVMm (balanced) ---
+[234/300] FgU8hVMmCss3biVXvmsgBiDNdYLaDHtEcXXMcCSVpump [balanced] pnl=-0.0973 SOL (-97.3%)  d15=-0.0972 d30=-0.0624  span=46.5h pts=221 failed=0
+--- [235/300] F4PaKuUP (balanced) ---
+[235/300] F4PaKuUPQ5c5QdkXqqjcprjnWXpQ2Qh4aCadobjNT4vP [balanced] pnl=-0.0620 SOL (-62.0%)  d15=-0.0621 d30=-0.0970  span=46.1h pts=293 failed=0
+--- [236/300] DwE9YWm9 (balanced) ---
+[236/300] DwE9YWm98PXnPaeYczax6yvoGKvZ6qm1V7vzsEwqpump [balanced] pnl=-0.0626 SOL (-62.6%)  d15=-0.0180 d30=-0.0624  span=46.8h pts=211 failed=0
+--- [237/300] HpWnGa2U (balanced) ---
+[237/300] HpWnGa2UtSTmy5VU87XGm8yPKZc93P7F927LwjQ5pump [balanced] pnl=-0.0827 SOL (-82.7%)  d15=-0.0827 d30=-0.0815  span=36.2h pts=143 failed=0
+--- [238/300] GJ6RSjJk (balanced) ---
+[238/300] GJ6RSjJkWEo36UXtKp9zD6hq8oxbPaTx2RuubEbupump [balanced] pnl=-0.0975 SOL (-97.5%)  d15=-0.0973 d30=-0.0958  span=47.6h pts=204 failed=0
+--- [239/300] Aj8uoW6Z (balanced) ---
+[239/300] Aj8uoW6ZQvejedM4sc21hUTFjXbjeA3X2ye7cmeRpump [balanced] pnl=-0.0978 SOL (-97.8%)  d15=-0.0979 d30=-0.0981  span=33.8h pts=191 failed=0
+--- [240/300] CaEocTtL (balanced) ---
+[240/300] CaEocTtLZCWWM8RVYbLnuKKpbuTSiNLF44CaPA8ocHBu [balanced] pnl=-0.0967 SOL (-96.7%)  d15=-0.0970 d30=-0.0971  span=46.9h pts=186 failed=0
+--- [241/300] DcsLnCez (balanced) ---
+[241/300] DcsLnCezECN49bNowJdtPc7mKrMLJ1PaVDXtTDvtmVk4 [balanced] pnl=-0.0849 SOL (-84.9%)  d15=-0.0820 d30=-0.0465  span=38.8h pts=208 failed=0
+--- [242/300] DsHHiqNs (balanced) ---
+[242/300] DsHHiqNs4ffjrBmQzJbYhBqctQ3BezTRDoPoMsWJpump [balanced] pnl=-0.0540 SOL (-54.0%)  d15=-0.0117 d30=-0.0524  span=46.2h pts=276 failed=0
+--- [243/300] 2QmmEqXy (balanced) ---
+[243/300] 2QmmEqXymWNZNBRwEaoD4dn7vvRRjo9LFPwjzKiQpump [balanced] pnl=-0.0607 SOL (-60.7%)  d15=-0.0608 d30=-0.0953  span=48.0h pts=228 failed=0
+--- [244/300] 5YR4QciA (balanced) ---
+[244/300] 5YR4QciAMw5NqV95Ahjpvc5F6cvqsTCZAddu4hZpBbVx [balanced] pnl=-0.0959 SOL (-95.9%)  d15=-0.0611 d30=-0.0966  span=43.3h pts=176 failed=0
+--- [245/300] AZmw7fo4 (balanced) ---
+[245/300] AZmw7fo4vWFKo4sAX3MWKpGAKGXuJrdFYPvM8mSEpump [balanced] pnl=-0.0969 SOL (-96.9%)  d15=-0.0972 d30=-0.0972  span=47.4h pts=313 failed=0
+--- [246/300] 8eVJQ5nb (balanced) ---
+[246/300] 8eVJQ5nbzJ83dUh9UPLu7gto16a8iGvjyh9XYJAupump [balanced] pnl=-0.0981 SOL (-98.1%)  d15=-0.0630 d30=-0.0981  span=46.8h pts=186 failed=0
+--- [247/300] 3hchDZsU (balanced) ---
+[247/300] 3hchDZsUA6bdNSchqf5CWBjFxiZD1bFP2fbgJj39zgYy [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [248/300] BawkRqNz (balanced) ---
+[248/300] BawkRqNzcw6DpNN73vVj1v6cQtKSVrzC3qwuRrt18cVU [balanced] pnl=-0.0972 SOL (-97.2%)  d15=-0.0972 d30=-0.0974  span=47.7h pts=235 failed=0
+--- [249/300] 84aFBuaA (balanced) ---
+[249/300] 84aFBuaAPeVKoFghavbvqGfjK7iBxkC7sKCZVhuupump [balanced] pnl=-0.0973 SOL (-97.3%)  d15=-0.0974 d30=-0.0974  span=45.1h pts=251 failed=0
+--- [250/300] 5ffneJV9 (balanced) ---
+[250/300] 5ffneJV96Q3X9jeuJTPajPSZxCWVFdssWrVTTy11pump [balanced] pnl=-0.0972 SOL (-97.2%)  d15=-0.0973 d30=-0.0972  span=47.8h pts=216 failed=0
+--- [251/300] p5raruXY (balanced) ---
+[251/300] p5raruXYdDtwibfWkAgNdeYHQGe1nUdAGKB7EwWpump [balanced] pnl=-0.0625 SOL (-62.5%)  d15=-0.0628 d30=-0.0974  span=42.4h pts=217 failed=0
+--- [252/300] 7JgQ6c8s (balanced) ---
+[252/300] 7JgQ6c8sXqKJmx3fx4cA57sogVzg3YwyiZAYi3zBAF5 [balanced] pnl=-0.0496 SOL (-49.6%)  d15=-0.0501 d30=-0.0829  span=43.3h pts=358 failed=0
+--- [253/300] uiQNceKY (balanced) ---
+[253/300] uiQNceKYCeRn8PvA1tAksfBVb2b3aDuUVUAkMbtpump [balanced] pnl=-0.0966 SOL (-96.6%)  d15=-0.0963 d30=-0.0958  span=47.3h pts=217 failed=0
+--- [254/300] 8w689zFs (balanced) ---
+[254/300] 8w689zFsegRorSrRkYzhcHrWrxhy8CFyYfCdSezHpump [balanced] pnl=-0.0631 SOL (-63.1%)  d15=-0.0632 d30=-0.0982  span=46.2h pts=151 failed=0
+--- [255/300] HQhWMtL2 (balanced) ---
+[255/300] HQhWMtL2BWx9D46dzjgR231emYZg8ahqyo5bTHqepump [balanced] pnl=-0.0968 SOL (-96.8%)  d15=-0.0963 d30=-0.0963  span=47.9h pts=200 failed=0
+--- [256/300] EQFmAhV8 (balanced) ---
+[256/300] EQFmAhV8Z8TQvY7rCvYmU6yJJF7KqryaxRWYhbT8VzL2 [balanced] pnl=-0.0850 SOL (-85.0%)  d15=-0.0837 d30=-0.0844  span=48.0h pts=312 failed=0
+--- [257/300] BToR5AKv (balanced) ---
+[257/300] BToR5AKvpgdsMVuM59dtGsW2e8HY2SCet8FSg8GW6tq8 [balanced] pnl=-0.0968 SOL (-96.8%)  d15=-0.0968 d30=-0.0968  span=47.4h pts=197 failed=0
+--- [258/300] 8xwevGtF (precision) ---
+[258/300] 8xwevGtFghaff83B4tQNAkdzoAjNuQ5GMKxYY75MfZhu [precision] pnl=-0.0984 SOL (-98.4%)  d15=-0.0978 d30=-0.0629  span=44.3h pts=142 failed=0
+--- [259/300] 7BppB5ap (balanced) ---
+[259/300] 7BppB5apCYgHjf1KKCfZA4WrDjjrDMrKPVuYah7x8Qjs [balanced] pnl=-0.0972 SOL (-97.2%)  d15=-0.0974 d30=-0.0972  span=45.6h pts=210 failed=0
+--- [260/300] DAqZZvkx (balanced) ---
+[260/300] DAqZZvkxcWaR17cWvXoA7n3wKTuDPhUZWQEi6Chhpump [balanced] pnl=-0.0974 SOL (-97.4%)  d15=-0.0972 d30=-0.0973  span=47.9h pts=203 failed=0
+--- [261/300] EksoWXCC (balanced) ---
+[261/300] EksoWXCCWkDRDjafaY975Gsb27BZcez2uuh8TS2opump [balanced] pnl=-0.0564 SOL (-56.4%)  d15=-0.0914 d30=-0.0901  span=46.3h pts=307 failed=0
+--- [262/300] GkE46G36 (conservative) ---
+[262/300] GkE46G36hvDPRQ9EbzpVJ9VMW2gkkYC4de3gvPadpump [conservative] pnl=-0.0634 SOL (-63.4%)  d15=-0.0982 d30=-0.0634  span=44.8h pts=194 failed=0
+--- [263/300] KxHGHaXX (balanced) ---
+[263/300] KxHGHaXXb1rtkUvZ4SNG5Xv1n1fNWJv4nWEBndppump [balanced] pnl=-0.0896 SOL (-89.6%)  d15=-0.0902 d30=-0.0902  span=47.9h pts=289 failed=0
+--- [264/300] 2FDsyrqy (balanced) ---
+[264/300] 2FDsyrqyJtkAUvDe7tbpgmjB1jaibC2wBfGs8gKPhNP4 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [265/300] CvYw81yn (balanced) ---
+[265/300] CvYw81ynrNksuFfrxEmhuVqpWznU2ZKkYNoivUWopump [balanced] pnl=-0.0529 SOL (-52.9%)  d15=-0.0855 d30=-0.0850  span=47.9h pts=415 failed=0
+--- [266/300] AFNHhHDo (balanced) ---
+[266/300] AFNHhHDorwwitTFyVCWYgWDDJD5FE2dkrQYjdswqpump [balanced] pnl=-0.0925 SOL (-92.5%)  d15=-0.0926 d30=-0.0933  span=48.0h pts=292 failed=0
+--- [267/300] CbswbtmV (balanced) ---
+[267/300] CbswbtmVia2xTwadJu1YUBT7JV7rRUEz9D4Lsg3DpvBg [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [268/300] AQ9pKadi (balanced) ---
+[268/300] AQ9pKadi9jA1vTofHFPrsgXjUU8C2pF8FpFpg2oMpump [balanced] pnl=-0.0978 SOL (-97.8%)  d15=-0.0975 d30=-0.0969  span=38.5h pts=222 failed=0
+--- [269/300] 3nt27RbM (balanced) ---
+[269/300] 3nt27RbMkJss4GWp1p6rKee9ykymUXMgfEt7KevMpump [balanced] pnl=-0.0551 SOL (-55.1%)  d15=-0.0131 d30=-0.0542  span=40.8h pts=242 failed=0
+--- [270/300] 8kStb3Gp (balanced) ---
+[270/300] 8kStb3Gpk3gYbLTpaurYrJ67w6y3n8QDm1XGNwZZvzAq [balanced] pnl=-0.0980 SOL (-98.0%)  d15=-0.0980 d30=-0.0980  span=47.9h pts=185 failed=0
+--- [271/300] F8rFVpXY (precision) ---
+[271/300] F8rFVpXYtsEchbAfKChpTKAjBbtVyCnpX2yy5i7Bpump [precision] pnl=-0.0977 SOL (-97.7%)  d15=-0.0976 d30=-0.0978  span=47.0h pts=236 failed=0
+--- [272/300] AGcHhhcP (balanced) ---
+[272/300] AGcHhhcPhC6dXiWaSRoTN2qwD92yC3djHLz1ZYcppump [balanced] pnl=-0.0620 SOL (-62.0%)  d15=-0.0620 d30=-0.0616  span=47.8h pts=197 failed=0
+--- [273/300] FyM68Czu (balanced) ---
+[273/300] FyM68CzuG7cSJ9Ao2JAZt1uQSVrj9SRyrnVAVnJ7pump [balanced] pnl=-0.0964 SOL (-96.4%)  d15=-0.0961 d30=-0.0960  span=48.0h pts=196 failed=0
+--- [274/300] EQytApMu (balanced) ---
+[274/300] EQytApMuVz5fksNdZ8rJ7fm1Q7JX1NfKL6JR3jZ7pump [balanced] pnl=-0.0973 SOL (-97.3%)  d15=-0.0971 d30=-0.0622  span=45.4h pts=204 failed=0
+--- [275/300] BF8Xrhf1 (balanced) ---
+[275/300] BF8Xrhf1mGTMKGHpLZZWkko9uZPU8cLdTHocZvaXGmzG [balanced] pnl=-0.0959 SOL (-95.9%)  d15=-0.0954 d30=-0.0954  span=48.0h pts=214 failed=0
+--- [276/300] GfqpMW4W (balanced) ---
+[276/300] GfqpMW4WyARXbFcC9Z6LguuF9fNdDnVbT2K9Risvpump [balanced] pnl=-0.0975 SOL (-97.5%)  d15=-0.0628 d30=-0.0629  span=45.5h pts=250 failed=0
+--- [277/300] CBFRHeKi (balanced) ---
+[277/300] CBFRHeKiU7STP3dPisvmnukRynp51spxj455GRqRKtBT [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [278/300] 8qrYiYSo (balanced) ---
+[278/300] 8qrYiYSosdQvZvUMpQAmxXf3v1Uhp9bSgAcewVofWet4 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND (2 requests, 0 failed)
+--- [279/300] 25zrhpHi (balanced) ---
+[279/300] 25zrhpHif2nxwH3dYraqAA64AeRdRj2keo1oNpsdpump [balanced] pnl=-0.0628 SOL (-62.8%)  d15=-0.0627 d30=-0.0976  span=46.5h pts=116 failed=0
+--- [280/300] 3pMiN3dB (balanced) ---
+[280/300] 3pMiN3dB1xjgVsgJCjoLUQFTB6Qo3YXGF7wdfoyB6tGA [balanced] pnl=-0.0971 SOL (-97.1%)  d15=-0.0973 d30=-0.0969  span=46.3h pts=221 failed=0
+--- [281/300] 7AUzu756 (balanced) ---
+[281/300] 7AUzu756Pp3Cg3NByuKfcRSAFFt31kjC6U6R1npkiA1Q [balanced] pnl=-0.0617 SOL (-61.7%)  d15=-0.0967 d30=-0.0967  span=47.5h pts=241 failed=0
+--- [282/300] C8U9aPpu (balanced) ---
+[282/300] C8U9aPpuXmHqjvdQX57uJMxKzjETkbrmYDm7eQ6fpump [balanced] pnl=-0.0979 SOL (-97.9%)  d15=-0.0979 d30=-0.0977  span=45.6h pts=211 failed=0
+--- [283/300] 34eiVk6v (balanced) ---
+[283/300] 34eiVk6vfLctP8FKQQ5y5hvZLA6pQJioXci4dVuDpump [balanced] pnl=-0.0759 SOL (-75.9%)  d15=-0.0765 d30=-0.0759  span=48.0h pts=268 failed=0
+--- [284/300] 3i43bRLK (balanced) ---
+[284/300] 3i43bRLKSomUXyin1jgGsd3y9MgBW1cdX3nh43YD3W4R [balanced] pnl=-0.0989 SOL (-98.9%)  d15=-0.0989 d30=-0.0990  span=47.2h pts=161 failed=0
+--- [285/300] AUTgNuik (balanced) ---
+[285/300] AUTgNuikE6tPVM6LsdEnpDMWybjruVkmmiZFKCuwpump [balanced] pnl=-0.0981 SOL (-98.1%)  d15=-0.0980 d30=-0.0980  span=47.2h pts=183 failed=0
+--- [286/300] 5ZmV93QL (precision) ---
+[286/300] 5ZmV93QLXmoaTjo4tp8HLWQC1La9u72ncb8hjn7zpump [precision] pnl=-0.0949 SOL (-94.9%)  d15=-0.0951 d30=-0.0951  span=41.3h pts=322 failed=0
+--- [287/300] FfyrCrkc (balanced) ---
+[287/300] FfyrCrkcdARKhGmPYoCQCcwsn4Eb1kbtww3JwSEYpump [balanced] pnl=-0.0977 SOL (-97.7%)  d15=-0.0628 d30=-0.0629  span=47.4h pts=168 failed=0
+--- [288/300] 3WcPnm5d (balanced) ---
+[288/300] 3WcPnm5dzhx76Au7RAR1XmA57idUBrCqhtnV2oGwD6Mp [balanced] pnl=-0.0977 SOL (-97.7%)  d15=-0.0973 d30=-0.0973  span=46.1h pts=185 failed=0
+--- [289/300] Ger9QLqe (balanced) ---
+[289/300] Ger9QLqe1RhWixofqm1nvFzpK4v99BPFaUbHpAG4pump [balanced] pnl=-0.0628 SOL (-62.8%)  d15=-0.0975 d30=-0.0975  span=46.7h pts=278 failed=0
+--- [290/300] 8F32oW8z (precision) ---
+[290/300] 8F32oW8zuwzRRGjkUH1NwE8RWsxvRapcg5MwRFpRTX26 [precision] pnl=-0.0968 SOL (-96.8%)  d15=-0.0967 d30=-0.0971  span=47.8h pts=204 failed=0
+--- [291/300] DMcS6oiU (balanced) ---
+[291/300] DMcS6oiUNKTQKjYKPuKvZbTU9d69oQsta2CWLCb7pump [balanced] pnl=-0.0973 SOL (-97.3%)  d15=-0.0626 d30=-0.0973  span=45.2h pts=277 failed=0
+--- [292/300] Fa4xG765 (balanced) ---
+[292/300] Fa4xG765c2TsCCaMvBNa6eqM8Av3r3zY9CD3AVuYpump [balanced] pnl=-0.0956 SOL (-95.6%)  d15=-0.0954 d30=-0.0947  span=47.2h pts=208 failed=0
+--- [293/300] 1MxFhpSi (balanced) ---
+[293/300] 1MxFhpSirbshMDiJTkuk5ZDy9qNRDFPwvvKM8VYpump [balanced] pnl=-0.0971 SOL (-97.1%)  d15=-0.0976 d30=-0.0975  span=38.6h pts=137 failed=0
+--- [294/300] 7eC91EZN (balanced) ---
+[294/300] 7eC91EZNA6JUQRBihTy2eCx246zy4vdEb8M6zzpn7g18 [balanced] pnl=-0.0612 SOL (-61.2%)  d15=-0.0953 d30=-0.0956  span=47.9h pts=255 failed=0
+--- [295/300] 7yVv1khN (balanced) ---
+[295/300] 7yVv1khNz9GzRTQBdBYRyTTTmXvSqYKcpi3EoTC3pump [balanced] pnl=-0.0541 SOL (-54.1%)  d15=-0.0538 d30=-0.0535  span=28.1h pts=281 failed=0
+--- [296/300] 9STRqKGL (balanced) ---
+[296/300] 9STRqKGLFmjupPtVo5VhnQHkGn7vV57W3jVPzQes5Vih [balanced] pnl=-0.0900 SOL (-90.0%)  d15=-0.0880 d30=-0.0886  span=45.9h pts=183 failed=0
+--- [297/300] 2NEqdaNx (balanced) ---
+[297/300] 2NEqdaNxeYhYCsMd1pQfoG8ws5Nc1A5pJECCkbnopump [balanced] pnl=-0.0971 SOL (-97.1%)  d15=-0.0973 d30=-0.0971  span=46.4h pts=185 failed=0
+--- [298/300] uRjcWjr5 (balanced) ---
+[298/300] uRjcWjr52UF43zqtLyU4Sqoxwa9qUkaHWVZJahJQMHN [balanced] pnl=-0.0973 SOL (-97.3%)  d15=-0.0968 d30=-0.0966  span=42.7h pts=162 failed=0
+--- [299/300] FuMvkfmj (balanced) ---
+[299/300] FuMvkfmjwYG5jsQ7wQkEaVi8dXuQo6QNvbyQqCm6pump [balanced] pnl=-0.0981 SOL (-98.1%)  d15=-0.0977 d30=-0.0975  span=43.1h pts=242 failed=0
+--- [300/300] CXqbrq3K (balanced) ---
+[300/300] CXqbrq3K81wRAj3AqJaPLq19hXdisAT1iLhjHhyBb5Ma [balanced] pnl=-0.0974 SOL (-97.4%)  d15=-0.0976 d30=-0.0978  span=44.1h pts=175 failed=0
+
+
+=== OVERALL ===
+Total calls:             300
+Scored:                  270
+No Pump.fun/PumpSwap trades: 30
+Lookup failed:           0
+Wins / losses (scored):  4 / 266
+Total P&L (SOL):         -18.1689
+Average per scored call: -67.3%
+
+=== BY TIER (entry at the first trade after the call) ===
+tier          calls  scored  no_pump failed    win%     avg%   median%   ex-top5%  total_SOL
+balanced        279     253       26      0    1.6%   -67.5%    -63.1%     -69.1%   -17.0667
+precision        15      13        2      0    0.0%   -68.9%    -63.0%     -80.0%    -0.8961
+conservative      6       4        2      0    0.0%   -51.5%    -62.5%       0.0%    -0.2062
+
+=== STRESS: average % per call if only part of the unsold tokens' marked value is realisable ===
+(100% = as simulated, 0% = every unsold token worth nothing)
+tier              n     100%      85%      75%      50%       0%     reserve=0  break-even
+balanced        253   -67.5%   -68.3%   -68.9%   -70.3%   -73.1%        -70.7%       1295%
+precision        13   -68.9%   -69.4%   -69.7%   -70.5%   -72.1%        -70.6%       2283%
+conservative      4   -51.5%   -51.8%   -52.0%   -52.5%   -53.4%        -52.8%       2868%
+
+=== ENTRY DELAY: average % per call, same calls in every column ===
+(only calls with a trade available at all three entry times)
+tier              n        0s       15s       30s     dropped
+balanced        253    -67.5%    -70.6%    -74.8%           0
+precision        13    -68.9%    -83.0%    -83.1%           0
+conservative      4    -51.5%    -88.6%    -80.1%           0
+
+=== PRICE-PATH COVERAGE (scored calls) ===
+Hours covered, 10th / 50th / 90th percentile: 41.7 / 47.1 / 48.0
+Reach hour 24: 100%   reach hour 40: 92%   reach hour 47: 51%
+Requests per call (median): 15
+
+=== PER-CALL DETAIL ===
+7BLkYWuwrSv9rW1eFqpmjhUHWbzY5sscszE3ahkkpump [balanced] ts=1790094878  entry=0.000000849 SOL  pnl=-0.0625 SOL (-62.5%)  moonbag=0.0021 SOL  span_h=46.6 pts=246
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0628 SOL (-62.8%)
+    delay 30s: pnl=-0.0628 SOL (-62.8%)
+8y16oHsekNSNM38A6ZkN9yTJGQyFyye71P8y1KHopump [balanced] ts=1788315789  entry=0.000000938 SOL  pnl=-0.0628 SOL (-62.8%)  moonbag=0.0019 SOL  span_h=47.1 pts=207
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0183 SOL (-18.3%)
+    delay 30s: pnl=-0.0983 SOL (-98.3%)
+Ci8pWuCV7SLucszdTRHzDpQGzgiHrS8n3TZEiruWpump [balanced] ts=1789012397  entry=0.000001099 SOL  pnl=-0.0167 SOL (-16.7%)  moonbag=0.0028 SOL  span_h=38.5 pts=242
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0956 SOL (-95.6%)
+    delay 30s: pnl=-0.0954 SOL (-95.4%)
+2kuEPy7zQNcCXmmq8zjTUNMm1WRs5XzBC5VXgVo6pump [precision] ts=1789210207  entry=0.000001023 SOL  pnl=-0.0177 SOL (-17.7%)  moonbag=0.0018 SOL  span_h=44.2 pts=215
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0617 SOL (-61.7%)
+    delay 30s: pnl=-0.0623 SOL (-62.3%)
+FBZqePqMMfqs74SZaxbNu3Gsne6Ny9VSosNnWTAdpump [balanced] ts=1790003170  entry=0.000000898 SOL  pnl=-0.0171 SOL (-17.1%)  moonbag=0.0024 SOL  span_h=46.0 pts=248
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0168 SOL (-16.8%)
+    delay 30s: pnl=-0.0169 SOL (-16.9%)
+2ddMcFkjrhdpQhJ3ZmG4DyPnkF3wZ36heCrNRGoppump [precision] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+HaFY5Jua3pRFTiVNT1X9krAUgB4WG3zitKbQpd1aNspX [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+3vD6LTH7Rvca5G4DcWwKAXWuZpcTrx4zN8KS81XvQxaW [balanced] ts=1790144694  entry=0.000000183 SOL  pnl=-0.0145 SOL (-14.5%)  moonbag=0.0050 SOL  span_h=47.2 pts=286
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0146 SOL (-14.6%)
+    delay 30s: pnl=-0.0155 SOL (-15.5%)
+6GewNzedSYD8d4U87ekZzLCPmNTV9o9D8GrV5T3wkgP4 [balanced] ts=1789652615  entry=0.000000974 SOL  pnl=-0.0173 SOL (-17.3%)  moonbag=0.0022 SOL  span_h=47.5 pts=147
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0174 SOL (-17.4%)
+    delay 30s: pnl=-0.0176 SOL (-17.6%)
+AxwSUUHx6hj8bgdtSxVUiKtKkZwmcDbNbEEtTvzfpump [balanced] ts=1790012256  entry=0.000000873 SOL  pnl=-0.0175 SOL (-17.5%)  moonbag=0.0472 SOL  span_h=48.0 pts=185
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0113 SOL (-11.3%)
+    delay 30s: pnl=-0.0113 SOL (-11.3%)
+3WVBzJsX6v9as9F6WtmC1HMvmAXxqAfgqvDEzhPbJQGi [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+bttFLQwpfrkk7y3GXLLPkTxuCQtFuH6cuKGWPysi8sn [balanced] ts=1788299513  entry=0.000000874 SOL  pnl=-0.0184 SOL (-18.4%)  moonbag=0.0011 SOL  span_h=47.5 pts=205
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0632 SOL (-63.2%)
+    delay 30s: pnl=-0.0629 SOL (-62.9%)
+CHQeLyR3kiywgkq6CQuTruNq64bi8RFUyLb3WCCX4iv7 [balanced] ts=1789943991  entry=0.000001364 SOL  pnl=-0.0964 SOL (-96.4%)  moonbag=0.0036 SOL  span_h=41.8 pts=341
+    delay 15s: pnl=-0.0961 SOL (-96.1%)
+    delay 30s: pnl=-0.0962 SOL (-96.2%)
+A7iQ8N5jKDrg1YUxJ7v8aN5AtkwJaUTNhq1jZ8YLFrAJ [balanced] ts=1789620683  entry=0.000000906 SOL  pnl=-0.0019 SOL (-1.9%)  moonbag=0.0176 SOL  span_h=48.0 pts=170
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0437 SOL (-43.7%)
+    delay 30s: pnl=-0.0436 SOL (-43.6%)
+Fd91C4zZ1dHnmrFKVEUbpvtau1nC4tmfWmbQRhp1pump [balanced] ts=1789568711  entry=0.000001003 SOL  pnl=-0.0632 SOL (-63.2%)  moonbag=0.0015 SOL  span_h=47.5 pts=197
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0632 SOL (-63.2%)
+    delay 30s: pnl=-0.0632 SOL (-63.2%)
+2kuEPy7zQNcCXmmq8zjTUNMm1WRs5XzBC5VXgVo6pump [conservative] ts=1789210207  entry=0.000001023 SOL  pnl=-0.0177 SOL (-17.7%)  moonbag=0.0018 SOL  span_h=44.2 pts=215
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0617 SOL (-61.7%)
+    delay 30s: pnl=-0.0623 SOL (-62.3%)
+9oqTMkjixS4kRgMtFU648YBm74gCdVaAiVebEZ2cRjQS [balanced] ts=1789962838  entry=0.000000898 SOL  pnl=-0.0383 SOL (-38.3%)  moonbag=0.0264 SOL  span_h=48.0 pts=297
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0377 SOL (-37.7%)
+    delay 30s: pnl=-0.0383 SOL (-38.3%)
+65f3QLYZhwA2Wd28iGXHtjK3MMtD2R2LUMkdCnapump [balanced] ts=1789655937  entry=0.000000911 SOL  pnl=-0.0183 SOL (-18.3%)  moonbag=0.0012 SOL  span_h=47.7 pts=147
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0185 SOL (-18.5%)
+    delay 30s: pnl=-0.0185 SOL (-18.5%)
+3Vx7yJSMWwBzYZtPtiBtfjAS6TxYttvLBCNzLRaJqGyW [balanced] ts=1789941801  entry=0.000002476 SOL  pnl=-0.0189 SOL (-18.9%)  moonbag=0.0006 SOL  span_h=46.1 pts=206
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0637 SOL (-63.7%)
+    delay 30s: pnl=-0.0638 SOL (-63.8%)
+divVYQRKhTBYm2BSqRM4MBxJbEDQqxX1xh4SrxJaEFz [balanced] ts=1788997462  entry=0.000001035 SOL  pnl=-0.0185 SOL (-18.5%)  moonbag=0.0010 SOL  span_h=46.1 pts=200
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0183 SOL (-18.3%)
+    delay 30s: pnl=-0.0183 SOL (-18.3%)
+5V2LTDFKa2TRMWp8UoYzG8oJbjLTu8Ud5X51eAbf8stA [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+Hi421CWivcf6SKMq2v7LiwdGRCHrwa7qdMvbysZupump [precision] ts=1789914286  entry=0.000000990 SOL  pnl=-0.0616 SOL (-61.6%)  moonbag=0.0031 SOL  span_h=47.9 pts=376
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0619 SOL (-61.9%)
+    delay 30s: pnl=-0.0620 SOL (-62.0%)
+9nqzTJJrhuiwKWYQ72h3DbuKXAQud1JsZ9rzVv4i4xhb [balanced] ts=1788888420  entry=0.000000875 SOL  pnl=-0.0626 SOL (-62.6%)  moonbag=0.0021 SOL  span_h=47.0 pts=247
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0627 SOL (-62.7%)
+    delay 30s: pnl=-0.0628 SOL (-62.8%)
+3DmF2srrZX1d47W1x7JQn49yk6QwEWoJBNkRvJ3Ppump [balanced] ts=1789485889  entry=0.000000981 SOL  pnl=-0.0185 SOL (-18.5%)  moonbag=0.0010 SOL  span_h=46.6 pts=161
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0632 SOL (-63.2%)
+    delay 30s: pnl=-0.0633 SOL (-63.3%)
+JfPRaZtnCMod6jzE6rJnv1nVstnRMsDCyhTFmP4pump [balanced] ts=1789705488  entry=0.000000880 SOL  pnl=-0.0976 SOL (-97.6%)  moonbag=0.0024 SOL  span_h=46.7 pts=117
+    delay 15s: pnl=-0.0967 SOL (-96.7%)
+    delay 30s: pnl=-0.0973 SOL (-97.3%)
+GCUvCs5nGtdmDrEaCuJPMH2Mf7Dv11YotTd4HNdaFF1t [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+4h5d9ejz8QSfzhAAVMLU5s9uFNzv3xmK6UuZK2PDpump [balanced] ts=1788402639  entry=0.000002096 SOL  pnl=-0.0164 SOL (-16.4%)  moonbag=0.0031 SOL  span_h=48.0 pts=176
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0166 SOL (-16.6%)
+    delay 30s: pnl=-0.0164 SOL (-16.4%)
+CsaCDAnxVNc83eNxwyi6d4rKWyEcy68Xwf1g9ys6pump [balanced] ts=1788914726  entry=0.000000881 SOL  pnl=-0.0183 SOL (-18.3%)  moonbag=0.0012 SOL  span_h=47.9 pts=230
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0631 SOL (-63.1%)
+    delay 30s: pnl=-0.0983 SOL (-98.3%)
+7WG3cSP6DEtD1YwZHXqSfXJqaf7C7qAopcdXUPKmpump [balanced] ts=1789627937  entry=0.000001086 SOL  pnl=-0.0633 SOL (-63.3%)  moonbag=0.0014 SOL  span_h=41.7 pts=82
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0634 SOL (-63.4%)
+    delay 30s: pnl=-0.0634 SOL (-63.4%)
+8GVQG7YifLZ9cesTjhfB8EUVMPvpWFhCMW2UYJ5mjw9t [balanced] ts=1790095467  entry=0.000000831 SOL  pnl=-0.0616 SOL (-61.6%)  moonbag=0.0031 SOL  span_h=46.7 pts=264
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0968 SOL (-96.8%)
+    delay 30s: pnl=-0.0968 SOL (-96.8%)
+9eECz3PAyTTYr1YR8B41EAzGCk6bQW6BkFMovLpCpump [balanced] ts=1788440173  entry=0.000000951 SOL  pnl=-0.0153 SOL (-15.3%)  moonbag=0.0043 SOL  span_h=48.0 pts=194
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0144 SOL (-14.4%)
+    delay 30s: pnl=-0.0138 SOL (-13.8%)
+8ZkHMzd9r91DBoGsZqn4F4rgRKGLDRpUcqHVM6RVpump [balanced] ts=1789881307  entry=0.000000189 SOL  pnl=-0.0120 SOL (-12.0%)  moonbag=0.0075 SOL  span_h=47.8 pts=362
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0118 SOL (-11.8%)
+    delay 30s: pnl=-0.0118 SOL (-11.8%)
+DrK9ci66pPJxi9ig327XcVRs8cDzs7frXXoHWwwKvsN5 [balanced] ts=1790050529  entry=0.000000937 SOL  pnl=-0.0607 SOL (-60.7%)  moonbag=0.0040 SOL  span_h=36.6 pts=216
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0169 SOL (-16.9%)
+    delay 30s: pnl=-0.0171 SOL (-17.1%)
+BiDSKQtbs2paLaw4foKuJiRiK4zB31TzoDyzbV1Q3qKs [balanced] ts=1788927288  entry=0.000002144 SOL  pnl=-0.0638 SOL (-63.8%)  moonbag=0.0009 SOL  span_h=47.2 pts=208
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0638 SOL (-63.8%)
+    delay 30s: pnl=-0.0189 SOL (-18.9%)
+4hmBjZ4NGG8HvVZridQ1ii7PKaFbw4CUMD2fudejpump [balanced] ts=1789172110  entry=0.000000846 SOL  pnl=-0.0152 SOL (-15.2%)  moonbag=0.0044 SOL  span_h=47.9 pts=255
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0150 SOL (-15.0%)
+    delay 30s: pnl=-0.0152 SOL (-15.2%)
+GNq9jVow6MayA3xM2AfGygh58gMu1vY6wajiXDXZCZu [balanced] ts=1789520128  entry=0.000002293 SOL  pnl=-0.0110 SOL (-11.0%)  moonbag=0.0085 SOL  span_h=48.0 pts=143
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0106 SOL (-10.6%)
+    delay 30s: pnl=-0.0890 SOL (-89.0%)
+26E6QuMq5QUA2n44pSoeMXDoAbEz8WaqFUNScYdfpump [balanced] ts=1788864587  entry=0.000001281 SOL  pnl=-0.0967 SOL (-96.7%)  moonbag=0.0033 SOL  span_h=47.9 pts=178
+    delay 15s: pnl=-0.0967 SOL (-96.7%)
+    delay 30s: pnl=-0.0962 SOL (-96.2%)
+Ev5GAuTCnN8RUEmWQkaLRtRP5rosEmKEerq6Wsxxpump [balanced] ts=1789397574  entry=0.000000906 SOL  pnl=-0.0185 SOL (-18.5%)  moonbag=0.0010 SOL  span_h=38.4 pts=102
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0185 SOL (-18.5%)
+    delay 30s: pnl=-0.0185 SOL (-18.5%)
+3e6to4qrHByU19Sij9DVKPB4AQD5RuyhH2Sj2ESLpump [balanced] ts=1789966286  entry=0.000000892 SOL  pnl=-0.0088 SOL (-8.8%)  moonbag=0.0559 SOL  span_h=48.0 pts=357
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0061 SOL (-6.1%)
+    delay 30s: pnl=-0.0027 SOL (-2.7%)
+SEqxLB82AsvpCBCzKuPb17Rt3aCT7iANKVFK8fPioHs [balanced] ts=1789672376  entry=0.000001349 SOL  pnl=-0.0981 SOL (-98.1%)  moonbag=0.0019 SOL  span_h=45.7 pts=202
+    delay 15s: pnl=-0.0982 SOL (-98.2%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+G9Cy1GrAj1NRsi9xYMGfgNQFZyYyEZZr66FNYGLnpump [balanced] ts=1789864026  entry=0.000001021 SOL  pnl=-0.0627 SOL (-62.7%)  moonbag=0.0020 SOL  span_h=45.9 pts=188
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0627 SOL (-62.7%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+5y1ubEMKvVFCqB8f6VBD5qn7X8kz6iD49gzUWpd2FLEX [balanced] ts=1789853716  entry=0.000000773 SOL  pnl=-0.0183 SOL (-18.3%)  moonbag=0.0012 SOL  span_h=47.6 pts=171
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0632 SOL (-63.2%)
+    delay 30s: pnl=-0.0632 SOL (-63.2%)
+G1iAXxMEsx6EwtPyw5mLgvWoZZVPhNKiHjimFti8pump [balanced] ts=1788818901  entry=0.000000885 SOL  pnl=-0.0469 SOL (-46.9%)  moonbag=0.0178 SOL  span_h=48.0 pts=232
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0469 SOL (-46.9%)
+    delay 30s: pnl=-0.0795 SOL (-79.5%)
+5Uh8h8fEGYCK6zifyWEWkrzBTcigWLebUnfU5Wvg6h3J [balanced] ts=1789037116  entry=0.000001850 SOL  pnl=-0.0949 SOL (-94.9%)  moonbag=0.0051 SOL  span_h=48.0 pts=190
+    delay 15s: pnl=-0.0956 SOL (-95.6%)
+    delay 30s: pnl=-0.0956 SOL (-95.6%)
+4U6B3U11hozyxGZ8dKGarwZviXphJ5MjVyA9skGTGyAN [balanced] ts=1789064621  entry=0.000000949 SOL  pnl=-0.0162 SOL (-16.2%)  moonbag=0.0033 SOL  span_h=47.8 pts=212
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0165 SOL (-16.5%)
+    delay 30s: pnl=-0.0605 SOL (-60.5%)
+8EpfsKaUp6iRyJZLZbDo5Y2Mma5UxJDCpf9qWq2kpump [balanced] ts=1789825249  entry=0.000000828 SOL  pnl=-0.0181 SOL (-18.1%)  moonbag=0.0014 SOL  span_h=46.0 pts=226
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0180 SOL (-18.0%)
+    delay 30s: pnl=-0.0623 SOL (-62.3%)
+Ajrn7dKyKRE6cCfcAaJnHWe9DA5z8NeYKGMjegrj6ALL [balanced] ts=1789154876  entry=0.000000882 SOL  pnl=-0.0631 SOL (-63.1%)  moonbag=0.0016 SOL  span_h=47.7 pts=156
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0631 SOL (-63.1%)
+    delay 30s: pnl=-0.0631 SOL (-63.1%)
+77xPMXy8pDhbk35YiWzNCdnWkBR7XjLntS4QnvMspump [balanced] ts=1789795747  entry=0.000000280 SOL  pnl=-0.0165 SOL (-16.5%)  moonbag=0.0030 SOL  span_h=43.4 pts=336
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0597 SOL (-59.7%)
+    delay 30s: pnl=-0.0944 SOL (-94.4%)
+mMHUFPJma7sGuFxYteoHJkfzb5iW6oLxsvVnUYfSTNK [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+EiTBcvpY2XzWkJ2mtZmJHf8hHQPwytVSWaAB414pVpR9 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+EBC4GKzu1NdKKNUGkFLT9GojvGo7e9dkeCGBbqYEhUKs [balanced] ts=1788233276  entry=0.000000923 SOL  pnl=-0.0184 SOL (-18.4%)  moonbag=0.0011 SOL  span_h=45.7 pts=214
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0630 SOL (-63.0%)
+    delay 30s: pnl=-0.0185 SOL (-18.5%)
+7LXaKFzpJhZVwLHtQ6XYDk4oLDwpcq8rT8uKKPxipump [balanced] ts=1789841592  entry=0.000000836 SOL  pnl=-0.0628 SOL (-62.8%)  moonbag=0.0019 SOL  span_h=46.6 pts=207
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0629 SOL (-62.9%)
+    delay 30s: pnl=-0.0629 SOL (-62.9%)
+8krV6qsF2PwKCDhw2B6Jn8A8FfSMLawLpvA8MTePpump [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+3uxzNhXquXNh8Y2avyxS5CnJVrSrQSGF4Bqd8F5Nfz7X [balanced] ts=1789924842  entry=0.000000892 SOL  pnl=-0.0626 SOL (-62.6%)  moonbag=0.0021 SOL  span_h=48.0 pts=131
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0625 SOL (-62.5%)
+    delay 30s: pnl=-0.0627 SOL (-62.7%)
+4qTuQFoCMQDJij6ZQZRHntC6sNMx9yHeyiG7GHngqHoY [balanced] ts=1788361875  entry=0.000000979 SOL  pnl=-0.0178 SOL (-17.8%)  moonbag=0.0017 SOL  span_h=44.8 pts=201
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0177 SOL (-17.7%)
+    delay 30s: pnl=-0.0179 SOL (-17.9%)
+CNWxmoBSQZo2Sgp5KSAK5m9FwSqDbXQRP4CNMuoe78Gm [balanced] ts=1789368067  entry=0.000025814 SOL  pnl=-0.0986 SOL (-98.6%)  moonbag=0.0014 SOL  span_h=48.0 pts=173
+    delay 15s: pnl=-0.0986 SOL (-98.6%)
+    delay 30s: pnl=-0.0986 SOL (-98.6%)
+25WqFGy3G86FvhrHEW9C16CchKT7ehLKq3pUXAdYpump [balanced] ts=1790122429  entry=0.000000715 SOL  pnl=-0.0182 SOL (-18.2%)  moonbag=0.0013 SOL  span_h=45.1 pts=179
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0181 SOL (-18.1%)
+    delay 30s: pnl=-0.0628 SOL (-62.8%)
+Hi421CWivcf6SKMq2v7LiwdGRCHrwa7qdMvbysZupump [conservative] ts=1789914298  entry=0.000001098 SOL  pnl=-0.0620 SOL (-62.0%)  moonbag=0.0027 SOL  span_h=48.0 pts=315
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0963 SOL (-96.3%)
+    delay 30s: pnl=-0.0966 SOL (-96.6%)
+4qxeVz5JTsVuvejwAe2o8DFcuchKvwNjaqz1c5ubEAFo [balanced] ts=1789411219  entry=0.000000919 SOL  pnl=-0.0976 SOL (-97.6%)  moonbag=0.0024 SOL  span_h=46.4 pts=177
+    delay 15s: pnl=-0.0978 SOL (-97.8%)
+    delay 30s: pnl=-0.0976 SOL (-97.6%)
+4hMvdY7KbsCzHnRE7Js6kNFyTdkqKMeTv9GPYD5ppump [balanced] ts=1789603630  entry=0.000003972 SOL  pnl=-0.0530 SOL (-53.0%)  moonbag=0.0117 SOL  span_h=48.0 pts=106
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0530 SOL (-53.0%)
+    delay 30s: pnl=-0.0531 SOL (-53.1%)
+Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump [precision] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+67rVP2rxtgJR5kgHCmm1UwJNPuuemyhcng86J4WMyGXU [balanced] ts=1789511930  entry=0.000001366 SOL  pnl=-0.0886 SOL (-88.6%)  moonbag=0.0114 SOL  span_h=47.9 pts=265
+    delay 15s: pnl=-0.0863 SOL (-86.3%)
+    delay 30s: pnl=-0.0837 SOL (-83.7%)
+5yN9ZbpkLfmEriMRa4YCnMA4vGKWWj1kDameveL1pump [balanced] ts=1789397230  entry=0.000001267 SOL  pnl=-0.0968 SOL (-96.8%)  moonbag=0.0032 SOL  span_h=48.0 pts=167
+    delay 15s: pnl=-0.0968 SOL (-96.8%)
+    delay 30s: pnl=-0.0968 SOL (-96.8%)
+4t58A221u1fMfxy3KgeZ8oRhQKQjTghUYFWZZ9rZpump [balanced] ts=1789376179  entry=0.000000924 SOL  pnl=+0.0238 SOL (+23.8%)  moonbag=0.0433 SOL  span_h=36.7 pts=346
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=+0.0232 SOL (+23.2%)
+    delay 30s: pnl=+0.0252 SOL (+25.2%)
+8thd7APG9E1bwQgQ8DxHAA7GvM8cDQVpn6V42pqQpump [balanced] ts=1789046268  entry=0.000000972 SOL  pnl=+0.0375 SOL (+37.5%)  moonbag=0.0570 SOL  span_h=48.0 pts=295
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=+0.0373 SOL (+37.3%)
+    delay 30s: pnl=+0.0376 SOL (+37.6%)
+DgxoKp2TkYY61vqsV8xoG3vrdFtJFhuLa25xzdXzpump [balanced] ts=1789648662  entry=0.000000981 SOL  pnl=-0.0625 SOL (-62.5%)  moonbag=0.0022 SOL  span_h=47.9 pts=177
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0974 SOL (-97.4%)
+    delay 30s: pnl=-0.0972 SOL (-97.2%)
+8ACkC3dZfbGbMKRfAKMetEqZzmvuG6ZLoLVCZ9Rw1zwr [balanced] ts=1790095089  entry=0.000000766 SOL  pnl=-0.0616 SOL (-61.6%)  moonbag=0.0031 SOL  span_h=33.1 pts=111
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0970 SOL (-97.0%)
+    delay 30s: pnl=-0.0794 SOL (-79.4%)
+FstQsxUszLcr6VDsq4e8msQ5t6HFU68RNGwRsJ8a7R1g [balanced] ts=1789616251  entry=0.000000618 SOL  pnl=-0.0133 SOL (-13.3%)  moonbag=0.0062 SOL  span_h=38.8 pts=215
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0133 SOL (-13.3%)
+    delay 30s: pnl=-0.0133 SOL (-13.3%)
+xcoio7guTWKAS38GY6TjcxmkTgsNBgri1geQAkGd2WJ [balanced] ts=1789321953  entry=0.000000960 SOL  pnl=-0.0879 SOL (-87.9%)  moonbag=0.0121 SOL  span_h=39.0 pts=242
+    delay 15s: pnl=-0.0864 SOL (-86.4%)
+    delay 30s: pnl=-0.0864 SOL (-86.4%)
+CKNAaAgULzreuEvJ8C2hGuAPcxSUZmGHhXTos5E4FGdC [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+As7SfJTWWiqxYwtbFcqQd2GT83k9Xr8X2G4ag4sEpump [balanced] ts=1790115343  entry=0.000000215 SOL  pnl=-0.0573 SOL (-57.3%)  moonbag=0.0074 SOL  span_h=45.2 pts=226
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0129 SOL (-12.9%)
+    delay 30s: pnl=-0.0148 SOL (-14.8%)
+7TRtkUGrm7YAiADRgvbLf2PVEDBpZP8kMjLRkM5Rpump [balanced] ts=1788240946  entry=0.000000934 SOL  pnl=-0.0627 SOL (-62.7%)  moonbag=0.0020 SOL  span_h=45.6 pts=231
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0628 SOL (-62.8%)
+    delay 30s: pnl=-0.0627 SOL (-62.7%)
+8hxwxk7PA6YPyHFK17uuwoZ4HEGnp8d1EVG339Tbpump [balanced] ts=1788651888  entry=0.000000883 SOL  pnl=-0.0973 SOL (-97.3%)  moonbag=0.0027 SOL  span_h=47.3 pts=193
+    delay 15s: pnl=-0.0974 SOL (-97.4%)
+    delay 30s: pnl=-0.0977 SOL (-97.7%)
+gB4NTGkQTgtXPZXbcP2Xhs2BoafkEFi1Z4MoriXpump [balanced] ts=1789468570  entry=0.000000986 SOL  pnl=-0.0978 SOL (-97.8%)  moonbag=0.0022 SOL  span_h=47.2 pts=172
+    delay 15s: pnl=-0.0975 SOL (-97.5%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+4RngpYCuoVsRLcUXrV4rXD7Ae2yGLiNf7TST4tNLpump [balanced] ts=1790117993  entry=0.000000177 SOL  pnl=-0.0011 SOL (-1.1%)  moonbag=0.0184 SOL  span_h=40.9 pts=314
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0012 SOL (-1.2%)
+    delay 30s: pnl=-0.0012 SOL (-1.2%)
+ER5Mk4jK2gpLSTneD14hHczodi3rsVU4mEGFaa9rQMjw [balanced] ts=1789537000  entry=0.000001532 SOL  pnl=-0.0586 SOL (-58.6%)  moonbag=0.0061 SOL  span_h=47.9 pts=234
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0930 SOL (-93.0%)
+    delay 30s: pnl=-0.0597 SOL (-59.7%)
+EBsK6LyH8ZCF6aq2uD4fTkFHuPzA1DLUE7fLjMyJpump [balanced] ts=1789818384  entry=0.000001684 SOL  pnl=-0.0362 SOL (-36.2%)  moonbag=0.0285 SOL  span_h=48.0 pts=109
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0621 SOL (-62.1%)
+    delay 30s: pnl=-0.0648 SOL (-64.8%)
+F46H2QLqv9JznhJsMS2PgUFosPUVRVWDtQf94ynGpump [balanced] ts=1789303294  entry=0.000001237 SOL  pnl=-0.0188 SOL (-18.8%)  moonbag=0.0007 SOL  span_h=46.1 pts=106
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0987 SOL (-98.7%)
+    delay 30s: pnl=-0.0989 SOL (-98.9%)
+Dy2SoHvUF18XHYZ8prSBy5ckVtSxwdWcgrtBS2w1uSYN [balanced] ts=1789577602  entry=0.000000926 SOL  pnl=-0.0166 SOL (-16.6%)  moonbag=0.0029 SOL  span_h=48.0 pts=228
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0605 SOL (-60.5%)
+    delay 30s: pnl=-0.0605 SOL (-60.5%)
+FhFvXUevhR7qohajBW43oaDVqN4KmAcxgMBqtPZJUZDx [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+27pbcjz2K3u1HKcoaigftSJNEga8w5zxDvmQNK46YnkP [balanced] ts=1789949815  entry=0.000000943 SOL  pnl=-0.0177 SOL (-17.7%)  moonbag=0.0018 SOL  span_h=47.2 pts=235
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0175 SOL (-17.5%)
+    delay 30s: pnl=-0.0178 SOL (-17.8%)
+ExjkXykdvgfdLwta8cWXnhWkVk5a6pzydSDW2VJYqQvL [balanced] ts=1789859079  entry=0.000000833 SOL  pnl=-0.0628 SOL (-62.8%)  moonbag=0.0019 SOL  span_h=47.9 pts=181
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0627 SOL (-62.7%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+4bYzAJLeJg6JhNFhTEnAXGb9avHPV6QJpHWJV4crpump [balanced] ts=1788548070  entry=0.000000961 SOL  pnl=-0.0977 SOL (-97.7%)  moonbag=0.0023 SOL  span_h=45.0 pts=241
+    delay 15s: pnl=-0.0626 SOL (-62.6%)
+    delay 30s: pnl=-0.0181 SOL (-18.1%)
+8eaTKu3hpJwaLQbsVbUjAVt1CPCvwP3PfYHP8k5Ypump [balanced] ts=1789319875  entry=0.000000809 SOL  pnl=-0.0160 SOL (-16.0%)  moonbag=0.0035 SOL  span_h=37.6 pts=226
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0945 SOL (-94.5%)
+    delay 30s: pnl=-0.0604 SOL (-60.4%)
+FUNDEDijvSQqU1zwZ5jrGVSPJZVNTraJSo4kQttY7JTv [balanced] ts=1789937661  entry=0.000001512 SOL  pnl=-0.0635 SOL (-63.5%)  moonbag=0.0012 SOL  span_h=47.6 pts=147
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0635 SOL (-63.5%)
+    delay 30s: pnl=-0.0634 SOL (-63.4%)
+Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump [conservative] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+HhBP2mXLmRXscuWiNKWTWg825TJTqpz5NJcX5A3LwLER [balanced] ts=1788303148  entry=0.000000853 SOL  pnl=-0.0969 SOL (-96.9%)  moonbag=0.0031 SOL  span_h=47.5 pts=206
+    delay 15s: pnl=-0.0623 SOL (-62.3%)
+    delay 30s: pnl=-0.0971 SOL (-97.1%)
+2Huhr8rHzgsiVF9zB9dBjECKwF4Le9TzBCoye4qGpump [balanced] ts=1790140853  entry=0.000000849 SOL  pnl=-0.0937 SOL (-93.7%)  moonbag=0.0063 SOL  span_h=48.0 pts=166
+    delay 15s: pnl=-0.0937 SOL (-93.7%)
+    delay 30s: pnl=-0.0938 SOL (-93.8%)
+CUFwEHj6MTc7BTXP25cqCAuR11qHrGK31nV9LN5Kmb3 [balanced] ts=1788567671  entry=0.000000922 SOL  pnl=-0.0624 SOL (-62.4%)  moonbag=0.0023 SOL  span_h=47.9 pts=206
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0623 SOL (-62.3%)
+    delay 30s: pnl=-0.0624 SOL (-62.4%)
+DFkrD8xDANHCwgp6fKr5EPVYE2CyFyY6fTrrXfiHJSdd [balanced] ts=1789333786  entry=0.000000915 SOL  pnl=-0.0184 SOL (-18.4%)  moonbag=0.0011 SOL  span_h=46.6 pts=267
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0184 SOL (-18.4%)
+    delay 30s: pnl=-0.0181 SOL (-18.1%)
+9EHm6JBJfxYghoxoj2gAepA4yc5x9jv4CCG5NWZzdwtb [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+EsR3JyV62bXb7M6D9aV7XzxHTxTkuHSBnDzHEphJLzcT [balanced] ts=1789746206  entry=0.000000939 SOL  pnl=-0.0629 SOL (-62.9%)  moonbag=0.0018 SOL  span_h=46.9 pts=100
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0183 SOL (-18.3%)
+    delay 30s: pnl=-0.0183 SOL (-18.3%)
+HhKGQ3YWFCr6kQNFLKYoWzu9A2EBdRbd6ASb48T9pump [balanced] ts=1788253899  entry=0.000000953 SOL  pnl=-0.0977 SOL (-97.7%)  moonbag=0.0023 SOL  span_h=47.6 pts=168
+    delay 15s: pnl=-0.0979 SOL (-97.9%)
+    delay 30s: pnl=-0.0977 SOL (-97.7%)
+zYiF3rA8aWYUuDek3Z3po9NF4V5UDky5nji7Wr6pump [balanced] ts=1790119858  entry=0.000000937 SOL  pnl=-0.0509 SOL (-50.9%)  moonbag=0.0491 SOL  span_h=48.0 pts=323
+    delay 15s: pnl=-0.0551 SOL (-55.1%)
+    delay 30s: pnl=-0.0286 SOL (-28.6%)
+CgPua3juHhCyfSCBRMM8kuRjEvuvt4rf4UbFSE5spump [balanced] ts=1788899073  entry=0.000000906 SOL  pnl=-0.0977 SOL (-97.7%)  moonbag=0.0023 SOL  span_h=43.7 pts=232
+    delay 15s: pnl=-0.0977 SOL (-97.7%)
+    delay 30s: pnl=-0.0630 SOL (-63.0%)
+fsnuqm67yp6nUBFYphAvvBoGfbEJXRFGwLFqRMMpump [balanced] ts=1789645039  entry=0.000000850 SOL  pnl=-0.0626 SOL (-62.6%)  moonbag=0.0021 SOL  span_h=45.3 pts=196
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0977 SOL (-97.7%)
+    delay 30s: pnl=-0.0979 SOL (-97.9%)
+4Fc8PwcBXEd6JcHus6YSBct3wdgn2XRf1Ey3DAfFedUC [balanced] ts=1789675326  entry=0.000001857 SOL  pnl=-0.0985 SOL (-98.5%)  moonbag=0.0015 SOL  span_h=44.4 pts=116
+    delay 15s: pnl=-0.0988 SOL (-98.8%)
+    delay 30s: pnl=-0.0987 SOL (-98.7%)
+wWgKBVz5dhvu6m8bLVDMjyYJ4pSDTd5ku45PyNiJYe2 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+4rLL1jNABtg6z6P9gJNQTk2jkbVwU514VHtf2xXopump [balanced] ts=1788909226  entry=0.000000909 SOL  pnl=-0.0186 SOL (-18.6%)  moonbag=0.0009 SOL  span_h=43.3 pts=192
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0186 SOL (-18.6%)
+    delay 30s: pnl=-0.0633 SOL (-63.3%)
+7k7J6BMjMv1iXNuFGzv12ANoiDW6zx9ev6uea9QCyGAR [balanced] ts=1789567550  entry=0.000001000 SOL  pnl=-0.0605 SOL (-60.5%)  moonbag=0.0042 SOL  span_h=47.9 pts=259
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0607 SOL (-60.7%)
+    delay 30s: pnl=-0.0606 SOL (-60.6%)
+Er5RuNhTEwJH5dHv9c3YGATjgkLCETH4dKazntyWEtXY [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+3rGSot1DANawxJYQPhYuNPxrLwX3wjLqnqfRWQSPF7FE [balanced] ts=1789524411  entry=0.000001620 SOL  pnl=-0.0962 SOL (-96.2%)  moonbag=0.0038 SOL  span_h=48.0 pts=221
+    delay 15s: pnl=-0.0962 SOL (-96.2%)
+    delay 30s: pnl=-0.0956 SOL (-95.6%)
+5fz3ZxQeygnQ5ZUKR7RRrHuGm1oDXex48buYEM2T3hR7 [balanced] ts=1789674776  entry=0.000002256 SOL  pnl=-0.0980 SOL (-98.0%)  moonbag=0.0020 SOL  span_h=47.1 pts=177
+    delay 15s: pnl=-0.0981 SOL (-98.1%)
+    delay 30s: pnl=-0.0979 SOL (-97.9%)
+GkE46G36hvDPRQ9EbzpVJ9VMW2gkkYC4de3gvPadpump [balanced] ts=1788472835  entry=0.000000889 SOL  pnl=-0.0630 SOL (-63.0%)  moonbag=0.0017 SOL  span_h=44.9 pts=199
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0631 SOL (-63.1%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+HJE2DEZXvErwUabTU16xzrS629qXVeVyTGvJYJVfpump [balanced] ts=1789232395  entry=0.000000950 SOL  pnl=-0.0628 SOL (-62.8%)  moonbag=0.0019 SOL  span_h=47.0 pts=230
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0981 SOL (-98.1%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+HazBDUEr3PCdJ4icNnXdg5zuVY9We5gjzrgs8pjjKkrJ [balanced] ts=1789742955  entry=0.000000907 SOL  pnl=-0.0626 SOL (-62.6%)  moonbag=0.0021 SOL  span_h=47.8 pts=195
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0978 SOL (-97.8%)
+    delay 30s: pnl=-0.0979 SOL (-97.9%)
+9AoKNzw8X4gktBG3R3AhZSJtd5yprJvyTvtBPha9GzL6 [balanced] ts=1789504146  entry=0.000001293 SOL  pnl=-0.0912 SOL (-91.2%)  moonbag=0.0088 SOL  span_h=38.5 pts=207
+    delay 15s: pnl=-0.0894 SOL (-89.4%)
+    delay 30s: pnl=-0.0880 SOL (-88.0%)
+6EDQfr9SFncQNDznP6Bf54fS2chvoSJ5XSkaLSMogaVd [balanced] ts=1788313782  entry=0.000000955 SOL  pnl=-0.0630 SOL (-63.0%)  moonbag=0.0017 SOL  span_h=47.1 pts=231
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0633 SOL (-63.3%)
+    delay 30s: pnl=-0.0984 SOL (-98.4%)
+ACQxHBwfVEXLYcfVsPtJVuMQ55bJAPh883WD1by4c5Sa [balanced] ts=1788810307  entry=0.000000776 SOL  pnl=-0.0162 SOL (-16.2%)  moonbag=0.0033 SOL  span_h=48.0 pts=270
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0165 SOL (-16.5%)
+    delay 30s: pnl=-0.0162 SOL (-16.2%)
+35ZaMxZ19o79EcsKc635EsTCaM32iALvt6saGn47pump [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+XYFwUfeWmsrixLy4zk4w2mHnaGkzEmjvMZjUHU1pump [balanced] ts=1789443566  entry=0.000000939 SOL  pnl=-0.0623 SOL (-62.3%)  moonbag=0.0024 SOL  span_h=47.2 pts=190
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0974 SOL (-97.4%)
+    delay 30s: pnl=-0.0971 SOL (-97.1%)
+FYuDikaj6mZ4GyYHEG7yoEpw4TBPVHdZUWEsTJenJrMG [balanced] ts=1789046675  entry=0.000001388 SOL  pnl=-0.0856 SOL (-85.6%)  moonbag=0.0144 SOL  span_h=48.0 pts=282
+    delay 15s: pnl=-0.0876 SOL (-87.6%)
+    delay 30s: pnl=-0.0851 SOL (-85.1%)
+H7odj4UcRPA4UNNjpqnjTHNh1zhp2pbayzrkgxPhpump [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+BpAmg4j2N2oS3C7LzR6njhn8u9VNEiL8cPCmA1gj6rcg [balanced] ts=1789835362  entry=0.000000815 SOL  pnl=-0.0972 SOL (-97.2%)  moonbag=0.0028 SOL  span_h=46.7 pts=226
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0970 SOL (-97.0%)
+2CPhCZqMg94nZ59Qds3tQ2sS9L6rPMLs9MkzvQ6Kpump [balanced] ts=1788628962  entry=0.000000888 SOL  pnl=-0.0627 SOL (-62.7%)  moonbag=0.0020 SOL  span_h=47.5 pts=254
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0974 SOL (-97.4%)
+    delay 30s: pnl=-0.0627 SOL (-62.7%)
+ES5kVscAXiF9H9FK5crZZpYbLa4EmRA5rLYoPaLGpump [balanced] ts=1788736260  entry=0.000000942 SOL  pnl=-0.0979 SOL (-97.9%)  moonbag=0.0021 SOL  span_h=42.2 pts=193
+    delay 15s: pnl=-0.0980 SOL (-98.0%)
+    delay 30s: pnl=-0.0981 SOL (-98.1%)
+BQtbEDcZRciafnXk5t5pFFaAiDkBAGufsRV3Ms9GJbiU [balanced] ts=1790129115  entry=0.000000838 SOL  pnl=-0.0620 SOL (-62.0%)  moonbag=0.0027 SOL  span_h=48.0 pts=243
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0618 SOL (-61.8%)
+    delay 30s: pnl=-0.0176 SOL (-17.6%)
+MhcRQ7kQsbtXmcUhAf1KVP1dF3M1bKXVNje1KTFpump [balanced] ts=1789925293  entry=0.000000865 SOL  pnl=-0.0628 SOL (-62.8%)  moonbag=0.0019 SOL  span_h=45.9 pts=196
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0624 SOL (-62.4%)
+    delay 30s: pnl=-0.0628 SOL (-62.8%)
+9mEW4vsVNyHuDZHp5SfYNtGWC8o7HEbNt6fbXP4ypump [balanced] ts=1788790036  entry=0.000001923 SOL  pnl=-0.0587 SOL (-58.7%)  moonbag=0.0060 SOL  span_h=47.8 pts=259
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0593 SOL (-59.3%)
+    delay 30s: pnl=-0.0593 SOL (-59.3%)
+6v4XyHhHj6uNsach9W4u59DntpdB7Q216E9fx37upump [balanced] ts=1789209375  entry=0.000000881 SOL  pnl=+0.0011 SOL (+1.1%)  moonbag=0.0206 SOL  span_h=48.0 pts=314
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=+0.0017 SOL (+1.7%)
+    delay 30s: pnl=+0.0044 SOL (+4.4%)
+C1SmvbwWEZkCremPBW9pQtZBv4mPpvCbg5ep1VvgqAtx [balanced] ts=1788721636  entry=0.000000906 SOL  pnl=-0.0178 SOL (-17.8%)  moonbag=0.0017 SOL  span_h=47.2 pts=290
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0178 SOL (-17.8%)
+    delay 30s: pnl=-0.0619 SOL (-61.9%)
+2UYFf4eJjaw8pFwRf8AftBgC1Y1rheFnD9unMorgpump [balanced] ts=1789719338  entry=0.000001021 SOL  pnl=-0.0979 SOL (-97.9%)  moonbag=0.0021 SOL  span_h=46.9 pts=170
+    delay 15s: pnl=-0.0977 SOL (-97.7%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+DHFQCKSrypN7eevHGUtgUFkGpmZijDMTLwxrgCsuwW4q [balanced] ts=1788997269  entry=0.000001971 SOL  pnl=-0.0513 SOL (-51.3%)  moonbag=0.0134 SOL  span_h=47.9 pts=368
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0513 SOL (-51.3%)
+    delay 30s: pnl=-0.0116 SOL (-11.6%)
+9mEW4vsVNyHuDZHp5SfYNtGWC8o7HEbNt6fbXP4ypump [precision] ts=1788790036  entry=0.000001923 SOL  pnl=-0.0587 SOL (-58.7%)  moonbag=0.0060 SOL  span_h=47.8 pts=242
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0593 SOL (-59.3%)
+    delay 30s: pnl=-0.0593 SOL (-59.3%)
+9gnfYsjg8VfCy113u4PPvxsQngMzzvAGTM3zRTpupump [balanced] ts=1788786661  entry=0.000000911 SOL  pnl=-0.0611 SOL (-61.1%)  moonbag=0.0036 SOL  span_h=47.8 pts=220
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0613 SOL (-61.3%)
+    delay 30s: pnl=-0.0612 SOL (-61.2%)
+3pvu1Gey7uA5sDaTi3D6q5Pgi2U24H92W4gsZfA9igXQ [balanced] ts=1790019796  entry=0.000000761 SOL  pnl=-0.0627 SOL (-62.7%)  moonbag=0.0020 SOL  span_h=47.5 pts=197
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0629 SOL (-62.9%)
+    delay 30s: pnl=-0.0629 SOL (-62.9%)
+BeUAXnAoF1ip3kMLCpgdJ8WRQFTzntDkgfyVYyMwpump [balanced] ts=1790114807  entry=0.000003083 SOL  pnl=-0.0640 SOL (-64.0%)  moonbag=0.0007 SOL  span_h=47.7 pts=231
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0640 SOL (-64.0%)
+    delay 30s: pnl=-0.0640 SOL (-64.0%)
+8Kx4MiW5noeXwi3CLQY3m6TxiYqq5pRM9hcXj4F4pump [balanced] ts=1788903369  entry=0.000000841 SOL  pnl=-0.0175 SOL (-17.5%)  moonbag=0.0020 SOL  span_h=47.8 pts=207
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0175 SOL (-17.5%)
+    delay 30s: pnl=-0.0176 SOL (-17.6%)
+9o4u2PWKwnwXao8FyRGsJK6dS38a6iyBPZiqiXYapump [balanced] ts=1789933613  entry=0.000000930 SOL  pnl=-0.0186 SOL (-18.6%)  moonbag=0.0009 SOL  span_h=45.7 pts=95
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0184 SOL (-18.4%)
+    delay 30s: pnl=-0.0985 SOL (-98.5%)
+5hpJtD4qvft1GBqu19v4s7GvLCSXKYt7hxrdKERBpump [balanced] ts=1788292609  entry=0.000000835 SOL  pnl=-0.0184 SOL (-18.4%)  moonbag=0.0011 SOL  span_h=43.7 pts=267
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0186 SOL (-18.6%)
+    delay 30s: pnl=-0.0631 SOL (-63.1%)
+2ddMcFkjrhdpQhJ3ZmG4DyPnkF3wZ36heCrNRGoppump [conservative] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+4Vur6RbGdWjhFsfULJx8z8ACfpFC9d2wMYaY43Srpump [balanced] ts=1789164387  entry=0.000001018 SOL  pnl=-0.0937 SOL (-93.7%)  moonbag=0.0063 SOL  span_h=36.1 pts=227
+    delay 15s: pnl=-0.0931 SOL (-93.1%)
+    delay 30s: pnl=-0.0925 SOL (-92.5%)
+5JGNsptgyW1w6za6LacKdA3PLYnxhbMVnEGbYJC4pump [balanced] ts=1789938501  entry=0.000000829 SOL  pnl=-0.0626 SOL (-62.6%)  moonbag=0.0021 SOL  span_h=47.8 pts=249
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0181 SOL (-18.1%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+Hd8mxPqfUzgvsegZKjub3UDpKWPz7uDfUwGmXMU869zX [balanced] ts=1788811870  entry=0.000000212 SOL  pnl=-0.0547 SOL (-54.7%)  moonbag=0.0100 SOL  span_h=46.2 pts=305
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0881 SOL (-88.1%)
+    delay 30s: pnl=-0.0558 SOL (-55.8%)
+xvxpMarR69eBd41FkA4YaRAjTN3f5cvzPmzk3xaTaup [balanced] ts=1789511641  entry=0.000001200 SOL  pnl=-0.0631 SOL (-63.1%)  moonbag=0.0016 SOL  span_h=47.3 pts=189
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0983 SOL (-98.3%)
+    delay 30s: pnl=-0.0983 SOL (-98.3%)
+5bNqSYwW3dPMtssF1PSihCS4ZiiZGe6edpuibBZhpump [balanced] ts=1788270963  entry=0.000001443 SOL  pnl=-0.0958 SOL (-95.8%)  moonbag=0.0042 SOL  span_h=48.0 pts=243
+    delay 15s: pnl=-0.0957 SOL (-95.7%)
+    delay 30s: pnl=-0.0944 SOL (-94.4%)
+74kYD4mhtWTxthsJ4w3sZL2pz8dCEk8CuJpxfAYMpump [balanced] ts=1789771470  entry=0.000001323 SOL  pnl=-0.0971 SOL (-97.1%)  moonbag=0.0029 SOL  span_h=47.8 pts=282
+    delay 15s: pnl=-0.0949 SOL (-94.9%)
+    delay 30s: pnl=-0.0949 SOL (-94.9%)
+H9TrEvgTv9rLq2gf8v7LPrEYY5T55Jp57TkS2WNz5YZ6 [balanced] ts=1789681629  entry=0.000000868 SOL  pnl=-0.0172 SOL (-17.2%)  moonbag=0.0023 SOL  span_h=46.8 pts=227
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0959 SOL (-95.9%)
+    delay 30s: pnl=-0.0961 SOL (-96.1%)
+C3NovCXxSQxovczpRRyb3T7ZAX1Z87Bt5xNoFXsaQVt1 [balanced] ts=1789578485  entry=0.000001182 SOL  pnl=-0.0968 SOL (-96.8%)  moonbag=0.0032 SOL  span_h=47.9 pts=188
+    delay 15s: pnl=-0.0969 SOL (-96.9%)
+    delay 30s: pnl=-0.0621 SOL (-62.1%)
+DTSnWMjHedLzcc2oVMpRzk1uankCF16v68PUmC65pump [balanced] ts=1789791501  entry=0.000000827 SOL  pnl=-0.0852 SOL (-85.2%)  moonbag=0.0148 SOL  span_h=47.9 pts=210
+    delay 15s: pnl=-0.0850 SOL (-85.0%)
+    delay 30s: pnl=-0.0533 SOL (-53.3%)
+2ubhzKPouTyA3yrzo7DfptPvDHsr1NBUcYPvDkR3FNut [balanced] ts=1789690563  entry=0.000000964 SOL  pnl=-0.0968 SOL (-96.8%)  moonbag=0.0032 SOL  span_h=47.5 pts=186
+    delay 15s: pnl=-0.0618 SOL (-61.8%)
+    delay 30s: pnl=-0.0619 SOL (-61.9%)
+HzWBsJ6qQo7reGHfene1XeA9eeZXNCr3FE93QMTTpump [balanced] ts=1788375300  entry=0.000000861 SOL  pnl=-0.0972 SOL (-97.2%)  moonbag=0.0028 SOL  span_h=46.4 pts=217
+    delay 15s: pnl=-0.0976 SOL (-97.6%)
+    delay 30s: pnl=-0.0976 SOL (-97.6%)
+3ULoD6ffRdG3B5Dndm1cQh7VNATqoitqQ1EVoAwWQZWk [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+BFt7QKEL81QGSUTQrXL2hLcZyviuhp3KL7qAsbAtpump [balanced] ts=1789597955  entry=0.000000997 SOL  pnl=-0.0633 SOL (-63.3%)  moonbag=0.0014 SOL  span_h=47.7 pts=211
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0634 SOL (-63.4%)
+    delay 30s: pnl=-0.0635 SOL (-63.5%)
+8XTUnXmSRP42ZVf4MyDVxAEQ6djzUpqXzywob6mLpump [balanced] ts=1789422952  entry=0.000000952 SOL  pnl=-0.0977 SOL (-97.7%)  moonbag=0.0023 SOL  span_h=45.2 pts=186
+    delay 15s: pnl=-0.0628 SOL (-62.8%)
+    delay 30s: pnl=-0.0980 SOL (-98.0%)
+fsnuqm67yp6nUBFYphAvvBoGfbEJXRFGwLFqRMMpump [precision] ts=1789645043  entry=0.000001014 SOL  pnl=-0.0630 SOL (-63.0%)  moonbag=0.0017 SOL  span_h=45.3 pts=191
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0978 SOL (-97.8%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+9eciHjJopku15zkke5GGdpPdfsDTqsfhQA9EibrApump [balanced] ts=1789309489  entry=0.000001025 SOL  pnl=-0.0883 SOL (-88.3%)  moonbag=0.0117 SOL  span_h=47.9 pts=267
+    delay 15s: pnl=-0.0889 SOL (-88.9%)
+    delay 30s: pnl=-0.0886 SOL (-88.6%)
+DcCSuU3DFtaCUi1Xa8U2PmdWWKJS5wjNCDkNq6Qcpump [balanced] ts=1790097966  entry=0.000001045 SOL  pnl=-0.0634 SOL (-63.4%)  moonbag=0.0013 SOL  span_h=44.3 pts=184
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0985 SOL (-98.5%)
+    delay 30s: pnl=-0.0986 SOL (-98.6%)
+GxVwjZjhAve6J8maGbwm8krzWB3Qgo33FXR7fweZpump [balanced] ts=1789243372  entry=0.000000903 SOL  pnl=-0.0973 SOL (-97.3%)  moonbag=0.0027 SOL  span_h=46.8 pts=266
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0973 SOL (-97.3%)
+5fR7Qj7XPQV5yQ79Zzyj8E28oCgCBx7BUB27Xz6Ppump [balanced] ts=1789312679  entry=0.000000934 SOL  pnl=-0.0972 SOL (-97.2%)  moonbag=0.0028 SOL  span_h=46.1 pts=205
+    delay 15s: pnl=-0.0970 SOL (-97.0%)
+    delay 30s: pnl=-0.0971 SOL (-97.1%)
+2ecWevfy9REp1PavdEqC2RTYFeYaEbVsU2ja2Njibuzz [balanced] ts=1789054664  entry=0.000000948 SOL  pnl=-0.0969 SOL (-96.9%)  moonbag=0.0031 SOL  span_h=47.6 pts=211
+    delay 15s: pnl=-0.0968 SOL (-96.8%)
+    delay 30s: pnl=-0.0968 SOL (-96.8%)
+GqwEctFskdnAjrG3WKE6AgUqswxYNADm7MwrHigfpump [balanced] ts=1789056475  entry=0.000001825 SOL  pnl=-0.0604 SOL (-60.4%)  moonbag=0.0043 SOL  span_h=48.0 pts=210
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0950 SOL (-95.0%)
+    delay 30s: pnl=-0.0948 SOL (-94.8%)
+4ACbbGX85cBkrTUTGTTEKB1L7CTmfbwuvMpKvf1Kpump [balanced] ts=1789006060  entry=0.000000924 SOL  pnl=-0.0629 SOL (-62.9%)  moonbag=0.0018 SOL  span_h=46.1 pts=163
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0980 SOL (-98.0%)
+    delay 30s: pnl=-0.0980 SOL (-98.0%)
+GkE46G36hvDPRQ9EbzpVJ9VMW2gkkYC4de3gvPadpump [precision] ts=1788472879  entry=0.000001005 SOL  pnl=-0.0632 SOL (-63.2%)  moonbag=0.0015 SOL  span_h=44.9 pts=196
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0980 SOL (-98.0%)
+    delay 30s: pnl=-0.0981 SOL (-98.1%)
+3RLe3pfHSv2KpPTzPmS4hLzWyjPSCXhP3ZaFQ7Rxi18j [balanced] ts=1789522111  entry=0.000001037 SOL  pnl=-0.0545 SOL (-54.5%)  moonbag=0.0455 SOL  span_h=47.9 pts=324
+    delay 15s: pnl=-0.0412 SOL (-41.2%)
+    delay 30s: pnl=-0.0394 SOL (-39.4%)
+9Dog1iTiReBKbttQ5jo67G6zdXCjRRbLTb2GvQCwpump [balanced] ts=1788732126  entry=0.000000878 SOL  pnl=-0.0623 SOL (-62.3%)  moonbag=0.0024 SOL  span_h=47.2 pts=215
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0623 SOL (-62.3%)
+    delay 30s: pnl=-0.0623 SOL (-62.3%)
+HakuGJo7Sfxvcxxt32MYY3irQBQoeKC8jDtwZURYpump [balanced] ts=1790088274  entry=0.000000857 SOL  pnl=-0.0976 SOL (-97.6%)  moonbag=0.0024 SOL  span_h=45.9 pts=47
+    delay 15s: pnl=-0.0976 SOL (-97.6%)
+    delay 30s: pnl=-0.0977 SOL (-97.7%)
+EwoHciwRuKoJuGsjf9AD3Pw7Cm4cUBk8mSd9n49Npump [balanced] ts=1788475897  entry=0.000000936 SOL  pnl=-0.0621 SOL (-62.1%)  moonbag=0.0026 SOL  span_h=46.9 pts=338
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0621 SOL (-62.1%)
+    delay 30s: pnl=-0.0621 SOL (-62.1%)
+42pb6W54vpYt4WGMwZ57Wz4TedsoydKVgHFgjjnip1pa [balanced] ts=1789576362  entry=0.000001332 SOL  pnl=-0.0920 SOL (-92.0%)  moonbag=0.0080 SOL  span_h=41.5 pts=198
+    delay 15s: pnl=-0.0916 SOL (-91.6%)
+    delay 30s: pnl=-0.0916 SOL (-91.6%)
+ZTaLTJs3oz4U8Rb4Njz2kjTNbC8tE2mdqVbg77npump [balanced] ts=1789635277  entry=0.000001003 SOL  pnl=-0.0976 SOL (-97.6%)  moonbag=0.0024 SOL  span_h=46.2 pts=188
+    delay 15s: pnl=-0.0978 SOL (-97.8%)
+    delay 30s: pnl=-0.0977 SOL (-97.7%)
+A3N4eqVn1e44nYpaYAtvuvfjCg6MLpz1vMKS67vspump [balanced] ts=1789780277  entry=0.000000886 SOL  pnl=-0.0979 SOL (-97.9%)  moonbag=0.0021 SOL  span_h=46.1 pts=80
+    delay 15s: pnl=-0.0182 SOL (-18.2%)
+    delay 30s: pnl=-0.0979 SOL (-97.9%)
+6sPYBcVxbudw4V2bgDrGvtAQ38mccTtcVUasEDhZ78qt [balanced] ts=1788677205  entry=0.000000913 SOL  pnl=-0.0497 SOL (-49.7%)  moonbag=0.0150 SOL  span_h=47.9 pts=282
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0497 SOL (-49.7%)
+    delay 30s: pnl=-0.0513 SOL (-51.3%)
+5NP3pTMgbvioJaki2Sdxm7DiaA2tt3BFkqTJyYNF5EwQ [balanced] ts=1788941750  entry=0.000000894 SOL  pnl=-0.0891 SOL (-89.1%)  moonbag=0.0109 SOL  span_h=45.7 pts=179
+    delay 15s: pnl=-0.0561 SOL (-56.1%)
+    delay 30s: pnl=-0.0561 SOL (-56.1%)
+GqwEctFskdnAjrG3WKE6AgUqswxYNADm7MwrHigfpump [precision] ts=1789056476  entry=0.000001800 SOL  pnl=-0.0603 SOL (-60.3%)  moonbag=0.0044 SOL  span_h=48.0 pts=208
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0952 SOL (-95.2%)
+    delay 30s: pnl=-0.0947 SOL (-94.7%)
+Ad881PycCzmgVmSvuvynMVQnhN929QDVykLf9iNLpump [balanced] ts=1789858215  entry=0.000001568 SOL  pnl=-0.0636 SOL (-63.6%)  moonbag=0.0011 SOL  span_h=47.4 pts=222
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0636 SOL (-63.6%)
+    delay 30s: pnl=-0.0987 SOL (-98.7%)
+2AHiQRHXW9paYDhmErpNgfPnqH1eBMyrAfAdXLSipump [balanced] ts=1788449682  entry=0.000000853 SOL  pnl=-0.0969 SOL (-96.9%)  moonbag=0.0031 SOL  span_h=47.8 pts=193
+    delay 15s: pnl=-0.0969 SOL (-96.9%)
+    delay 30s: pnl=-0.0968 SOL (-96.8%)
+26BHS3exWAEjaaxfFE1CenbJxVbCw6GMz4ibugt9pump [balanced] ts=1790011036  entry=0.000000734 SOL  pnl=-0.0184 SOL (-18.4%)  moonbag=0.0011 SOL  span_h=39.6 pts=64
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    leg 2: fired at 1.60x, returned 0.0452 SOL
+    delay 15s: pnl=-0.0979 SOL (-97.9%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+FKb2KKTsp1mSyHw5aarmGA1YpgARPudRfbXdHznepump [balanced] ts=1790013176  entry=0.000000930 SOL  pnl=-0.0630 SOL (-63.0%)  moonbag=0.0017 SOL  span_h=46.3 pts=167
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0982 SOL (-98.2%)
+    delay 30s: pnl=-0.0981 SOL (-98.1%)
+H5moUdxQz4fvFCoyiEG2MzNfmzTGiiJLfzFKanG5svKX [balanced] ts=1789512690  entry=0.000001172 SOL  pnl=-0.0911 SOL (-91.1%)  moonbag=0.0089 SOL  span_h=48.0 pts=260
+    delay 15s: pnl=-0.0911 SOL (-91.1%)
+    delay 30s: pnl=-0.0899 SOL (-89.9%)
+3EAX8K22K3P3Z8JGUcuPbuwtQTcf5ddURo2LdGq2cryp [balanced] ts=1789953587  entry=0.000000979 SOL  pnl=-0.0978 SOL (-97.8%)  moonbag=0.0022 SOL  span_h=47.7 pts=168
+    delay 15s: pnl=-0.0627 SOL (-62.7%)
+    delay 30s: pnl=-0.0980 SOL (-98.0%)
+B8pR169GuJG3tncFTxu6U48H1fBur4j8FgaxsEevaM4M [balanced] ts=1789691028  entry=0.000001141 SOL  pnl=-0.0625 SOL (-62.5%)  moonbag=0.0022 SOL  span_h=47.2 pts=198
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0973 SOL (-97.3%)
+    delay 30s: pnl=-0.0973 SOL (-97.3%)
+7XLNdfeNXmXMnMcQuUqJUzi6ah8pHpndKhwhxbsDUFL3 [balanced] ts=1788234783  entry=0.000000892 SOL  pnl=-0.0976 SOL (-97.6%)  moonbag=0.0024 SOL  span_h=46.5 pts=206
+    delay 15s: pnl=-0.0978 SOL (-97.8%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+83CC2cufFWPQHzkB8gcpYawPwrvMXazoXDE9CEMWpump [balanced] ts=1789398187  entry=0.000001082 SOL  pnl=-0.0976 SOL (-97.6%)  moonbag=0.0024 SOL  span_h=37.1 pts=177
+    delay 15s: pnl=-0.0976 SOL (-97.6%)
+    delay 30s: pnl=-0.0976 SOL (-97.6%)
+FKb2KKTsp1mSyHw5aarmGA1YpgARPudRfbXdHznepump [precision] ts=1790013176  entry=0.000000930 SOL  pnl=-0.0630 SOL (-63.0%)  moonbag=0.0017 SOL  span_h=46.3 pts=167
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0982 SOL (-98.2%)
+    delay 30s: pnl=-0.0981 SOL (-98.1%)
+5ibhibvF2VHnyizcrrcZp3PM2zrttosvibomMtex8tSK [balanced] ts=1789520031  entry=0.000001139 SOL  pnl=-0.0974 SOL (-97.4%)  moonbag=0.0026 SOL  span_h=46.6 pts=200
+    delay 15s: pnl=-0.0969 SOL (-96.9%)
+    delay 30s: pnl=-0.0950 SOL (-95.0%)
+EnGnwy5koQkE8i2HLAfmNqyCmjdPhyG12yyPutTQpump [balanced] ts=1789912378  entry=0.000000881 SOL  pnl=-0.0970 SOL (-97.0%)  moonbag=0.0030 SOL  span_h=47.9 pts=201
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0971 SOL (-97.1%)
+bmpaAQGSVsu4vbd2cT7hsVCoMkMmjC3ZMhRpuefpump [balanced] ts=1789751424  entry=0.000001386 SOL  pnl=-0.0983 SOL (-98.3%)  moonbag=0.0017 SOL  span_h=45.9 pts=155
+    delay 15s: pnl=-0.0982 SOL (-98.2%)
+    delay 30s: pnl=-0.0981 SOL (-98.1%)
+2oYchSWCXvbi5W6vPaJD3hgpqrLrU8TdQ8hPLJhAUavz [balanced] ts=1789885312  entry=0.000000860 SOL  pnl=-0.0866 SOL (-86.6%)  moonbag=0.0134 SOL  span_h=36.1 pts=354
+    delay 15s: pnl=-0.0859 SOL (-85.9%)
+    delay 30s: pnl=-0.0861 SOL (-86.1%)
+DemN5N4frwggrxjnLeuasKBovoVUhyKFPhG5cHGZpump [balanced] ts=1789409695  entry=0.000001191 SOL  pnl=-0.0964 SOL (-96.4%)  moonbag=0.0036 SOL  span_h=47.3 pts=220
+    delay 15s: pnl=-0.0962 SOL (-96.2%)
+    delay 30s: pnl=-0.0956 SOL (-95.6%)
+4io5KiYScZS89bQqDVoGkmvyXY4RsQXs8WcLe758J9jX [precision] ts=1788747759  entry=0.000001951 SOL  pnl=-0.0578 SOL (-57.8%)  moonbag=0.0069 SOL  span_h=36.3 pts=227
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0574 SOL (-57.4%)
+    delay 30s: pnl=-0.0574 SOL (-57.4%)
+DXozZnWKDZTLDyejFekQqP8fpGLq61k7KdxaLZy8PUqU [balanced] ts=1788821601  entry=0.000000913 SOL  pnl=-0.0973 SOL (-97.3%)  moonbag=0.0027 SOL  span_h=48.0 pts=236
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0973 SOL (-97.3%)
+HswZQAWSwFkGDbqUkFVodXPpDaCVpouEuKq7i7hdyout [balanced] ts=1789668555  entry=0.000000873 SOL  pnl=-0.0630 SOL (-63.0%)  moonbag=0.0017 SOL  span_h=43.7 pts=155
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0630 SOL (-63.0%)
+    delay 30s: pnl=-0.0631 SOL (-63.1%)
+FY6kgo5jvUJV1ddz8XoveZraM5u6UkrVqgMrqJhypump [balanced] ts=1790020045  entry=0.000000181 SOL  pnl=-0.0539 SOL (-53.9%)  moonbag=0.0108 SOL  span_h=45.0 pts=218
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0561 SOL (-56.1%)
+    delay 30s: pnl=-0.0878 SOL (-87.8%)
+EfGrSKGexKszbUWLKT2XHvVMncxgCi3xAPTVYjKdpump [balanced] ts=1789861919  entry=0.000000188 SOL  pnl=-0.0544 SOL (-54.4%)  moonbag=0.0103 SOL  span_h=46.5 pts=245
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0125 SOL (-12.5%)
+    delay 30s: pnl=-0.0557 SOL (-55.7%)
+CtjPQSDXTwUEs1mv72KeMCMNGW8WYXzHGofbU99wV4hm [balanced] ts=1788319572  entry=0.000001131 SOL  pnl=-0.0955 SOL (-95.5%)  moonbag=0.0045 SOL  span_h=47.9 pts=224
+    delay 15s: pnl=-0.0950 SOL (-95.0%)
+    delay 30s: pnl=-0.0948 SOL (-94.8%)
+69fmNNTkyAfWSTG5Fs86cULWC3bBxLxkY4mM88Ptpump [balanced] ts=1789498093  entry=0.000000919 SOL  pnl=-0.0629 SOL (-62.9%)  moonbag=0.0018 SOL  span_h=47.9 pts=146
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0977 SOL (-97.7%)
+    delay 30s: pnl=-0.0979 SOL (-97.9%)
+ExY678iDsPquXQ6mugQv7HK4LYLWov47pPN4dY97pump [balanced] ts=1789572123  entry=0.000001273 SOL  pnl=-0.0964 SOL (-96.4%)  moonbag=0.0036 SOL  span_h=47.9 pts=205
+    delay 15s: pnl=-0.0962 SOL (-96.2%)
+    delay 30s: pnl=-0.0941 SOL (-94.1%)
+8gdYSwpdhgGLfskC4P7A2xvjHSBjjBVx5Exw7yCYBVy3 [balanced] ts=1790136617  entry=0.000001603 SOL  pnl=-0.0635 SOL (-63.5%)  moonbag=0.0012 SOL  span_h=47.9 pts=225
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0635 SOL (-63.5%)
+    delay 30s: pnl=-0.0987 SOL (-98.7%)
+2QjuLTP2BqEZozJagNQazSTB3LsZ6mhkijHiQ5vGLkUw [balanced] ts=1789951647  entry=0.000000925 SOL  pnl=-0.0975 SOL (-97.5%)  moonbag=0.0025 SOL  span_h=44.3 pts=213
+    delay 15s: pnl=-0.0975 SOL (-97.5%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+6wRM3pvVa3JLW4UtzVn5uvXiUtPCXrDpLPYkEffapump [balanced] ts=1789212007  entry=0.000000982 SOL  pnl=-0.0629 SOL (-62.9%)  moonbag=0.0018 SOL  span_h=47.8 pts=246
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0627 SOL (-62.7%)
+    delay 30s: pnl=-0.0627 SOL (-62.7%)
+8xwevGtFghaff83B4tQNAkdzoAjNuQ5GMKxYY75MfZhu [balanced] ts=1789674367  entry=0.000000893 SOL  pnl=-0.0631 SOL (-63.1%)  moonbag=0.0016 SOL  span_h=44.3 pts=129
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0628 SOL (-62.8%)
+    delay 30s: pnl=-0.0982 SOL (-98.2%)
+9dWDjBdiA186JVEKLvHCSbKaMZqLqrkW9WJ8j5S6pump [balanced] ts=1789311215  entry=0.000000952 SOL  pnl=-0.0626 SOL (-62.6%)  moonbag=0.0021 SOL  span_h=47.7 pts=194
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0628 SOL (-62.8%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+GijeN8hAGXrhdigBzQRNXTN4n9vCMhoAm2DJogKebUQ [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+3XQkccyAHi3ifYv9kRi5hfcfSpvWcY3xpWBJWpjLpump [balanced] ts=1788979470  entry=0.000000947 SOL  pnl=-0.0978 SOL (-97.8%)  moonbag=0.0022 SOL  span_h=47.7 pts=158
+    delay 15s: pnl=-0.0967 SOL (-96.7%)
+    delay 30s: pnl=-0.0967 SOL (-96.7%)
+FKb2KKTsp1mSyHw5aarmGA1YpgARPudRfbXdHznepump [conservative] ts=1790013177  entry=0.000000918 SOL  pnl=-0.0630 SOL (-63.0%)  moonbag=0.0017 SOL  span_h=46.3 pts=152
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0983 SOL (-98.3%)
+    delay 30s: pnl=-0.0981 SOL (-98.1%)
+CnJoLNyHpgVqNWBPcdp4bBoZz4ZBwPi6tHuLtLtaSSmb [balanced] ts=1789665705  entry=0.000001875 SOL  pnl=-0.0988 SOL (-98.8%)  moonbag=0.0012 SOL  span_h=43.4 pts=160
+    delay 15s: pnl=-0.0990 SOL (-99.0%)
+    delay 30s: pnl=-0.0987 SOL (-98.7%)
+3bxAxGyQunUjz5JEvfYgEBkjfwX13q47tndwFwbyZJvC [balanced] ts=1788722872  entry=0.000000776 SOL  pnl=+0.0210 SOL (+21.0%)  moonbag=0.0856 SOL  span_h=47.8 pts=294
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=+0.0145 SOL (+14.5%)
+    delay 30s: pnl=+0.0229 SOL (+22.9%)
+E1jYBKsG26eeUmv5eMBiDxN17incYPYWtqm9SQjsr1CQ [balanced] ts=1788790622  entry=0.000000912 SOL  pnl=-0.0964 SOL (-96.4%)  moonbag=0.0036 SOL  span_h=47.7 pts=226
+    delay 15s: pnl=-0.0617 SOL (-61.7%)
+    delay 30s: pnl=-0.0963 SOL (-96.3%)
+8F32oW8zuwzRRGjkUH1NwE8RWsxvRapcg5MwRFpRTX26 [balanced] ts=1788816258  entry=0.000000880 SOL  pnl=-0.0964 SOL (-96.4%)  moonbag=0.0036 SOL  span_h=47.9 pts=288
+    delay 15s: pnl=-0.0961 SOL (-96.1%)
+    delay 30s: pnl=-0.0960 SOL (-96.0%)
+4osEVzCczEYnD7szRGRrqwk7YQQoWiQZ3f1zYgbxpump [balanced] ts=1790003875  entry=0.000000210 SOL  pnl=-0.0554 SOL (-55.4%)  moonbag=0.0093 SOL  span_h=47.2 pts=273
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0555 SOL (-55.5%)
+    delay 30s: pnl=-0.0554 SOL (-55.4%)
+5JGNsptgyW1w6za6LacKdA3PLYnxhbMVnEGbYJC4pump [precision] ts=1789938513  entry=0.000000914 SOL  pnl=-0.0628 SOL (-62.8%)  moonbag=0.0019 SOL  span_h=47.8 pts=212
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0627 SOL (-62.7%)
+    delay 30s: pnl=-0.0981 SOL (-98.1%)
+2FA3TvPuPqurjZayzMcyJfav8W6fDjpH8yCX8nMPJyDJ [balanced] ts=1789691426  entry=0.000000981 SOL  pnl=-0.0979 SOL (-97.9%)  moonbag=0.0021 SOL  span_h=46.2 pts=131
+    delay 15s: pnl=-0.0978 SOL (-97.8%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+F8rFVpXYtsEchbAfKChpTKAjBbtVyCnpX2yy5i7Bpump [balanced] ts=1789919213  entry=0.000000931 SOL  pnl=-0.0975 SOL (-97.5%)  moonbag=0.0025 SOL  span_h=47.0 pts=246
+    delay 15s: pnl=-0.0976 SOL (-97.6%)
+    delay 30s: pnl=-0.0977 SOL (-97.7%)
+4io5KiYScZS89bQqDVoGkmvyXY4RsQXs8WcLe758J9jX [balanced] ts=1788747760  entry=0.000002009 SOL  pnl=-0.0580 SOL (-58.0%)  moonbag=0.0067 SOL  span_h=36.3 pts=234
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0581 SOL (-58.1%)
+    delay 30s: pnl=-0.0574 SOL (-57.4%)
+Ej3dwnKLYsYFSAHXw4k3s9EQM1KGJkYSHtDrunCjQjru [balanced] ts=1789497746  entry=0.000000834 SOL  pnl=-0.0628 SOL (-62.8%)  moonbag=0.0019 SOL  span_h=47.5 pts=178
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0980 SOL (-98.0%)
+    delay 30s: pnl=-0.0983 SOL (-98.3%)
+Di85N4ji3btFSnEVSi7vjBP5eEXiencPz7D11pgardhr [balanced] ts=1788747125  entry=0.000000879 SOL  pnl=-0.0621 SOL (-62.1%)  moonbag=0.0026 SOL  span_h=47.8 pts=201
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0968 SOL (-96.8%)
+    delay 30s: pnl=-0.0965 SOL (-96.5%)
+CtSNH5Qnb2sN8yjwDgPCkQLNPU2DF6Kk5CuLy6WQmvC6 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+HsUQhRregk8ZR9QqEXvjyrZP15rwj4au7VdXWt72pump [balanced] ts=1789286785  entry=0.000000966 SOL  pnl=-0.0619 SOL (-61.9%)  moonbag=0.0028 SOL  span_h=44.6 pts=233
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0622 SOL (-62.2%)
+    delay 30s: pnl=-0.0621 SOL (-62.1%)
+9vy3vFYJRayp73MHpQsNRwnCoDRiVhAiYAyWGKXQxsyV [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+32mZfywmvXzRffeaPWWKRDA1Fcy5RST9YTiqNBkhpump [balanced] ts=1790027785  entry=0.000000842 SOL  pnl=-0.0972 SOL (-97.2%)  moonbag=0.0028 SOL  span_h=46.6 pts=196
+    delay 15s: pnl=-0.0966 SOL (-96.6%)
+    delay 30s: pnl=-0.0971 SOL (-97.1%)
+HRXEKvAuz3Y1uocPtwRHezC5UAtNuD9X9kfyiSPuvMYb [balanced] ts=1789949471  entry=0.000000978 SOL  pnl=-0.0977 SOL (-97.7%)  moonbag=0.0023 SOL  span_h=44.4 pts=169
+    delay 15s: pnl=-0.0976 SOL (-97.6%)
+    delay 30s: pnl=-0.0977 SOL (-97.7%)
+ZqBhTgEEtxpqPct8RH7ynPzVRo3b3fXP9MjL175pump [balanced] ts=1789833213  entry=0.000000848 SOL  pnl=-0.0631 SOL (-63.1%)  moonbag=0.0016 SOL  span_h=47.9 pts=79
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0627 SOL (-62.7%)
+    delay 30s: pnl=-0.0631 SOL (-63.1%)
+CauBax2LYd2rLaLMaFRhgCzreTw3XbC6ErbbhE7jPpja [balanced] ts=1789822271  entry=0.000000873 SOL  pnl=-0.0606 SOL (-60.6%)  moonbag=0.0041 SOL  span_h=47.9 pts=242
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0606 SOL (-60.6%)
+    delay 30s: pnl=-0.0611 SOL (-61.1%)
+H7L3oDyyQBhcHM5CRu8ndbVLMSQMBZotnJisPzVfhyZZ [balanced] ts=1788468643  entry=0.000000880 SOL  pnl=-0.0972 SOL (-97.2%)  moonbag=0.0028 SOL  span_h=42.7 pts=175
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0974 SOL (-97.4%)
+5ZmV93QLXmoaTjo4tp8HLWQC1La9u72ncb8hjn7zpump [balanced] ts=1789569835  entry=0.000001036 SOL  pnl=-0.0608 SOL (-60.8%)  moonbag=0.0039 SOL  span_h=41.3 pts=338
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0946 SOL (-94.6%)
+    delay 30s: pnl=-0.0609 SOL (-60.9%)
+HkKLwqPZML4g3kFUxymWMvodN4THFNdoUiHbpSqApump [balanced] ts=1790019139  entry=0.000000825 SOL  pnl=-0.0627 SOL (-62.7%)  moonbag=0.0020 SOL  span_h=47.0 pts=136
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0979 SOL (-97.9%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+4vYNt561GoSr4MJMJo1DTqMw6qVykncxw1E78DiXpump [balanced] ts=1788313071  entry=0.000000886 SOL  pnl=-0.0511 SOL (-51.1%)  moonbag=0.0136 SOL  span_h=48.0 pts=259
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0511 SOL (-51.1%)
+    delay 30s: pnl=-0.0522 SOL (-52.2%)
+36j5MKbcNyd9vjHePhZLu8rNt7RXW2HU89sKyVvApump [balanced] ts=1788363784  entry=0.000001006 SOL  pnl=-0.0596 SOL (-59.6%)  moonbag=0.0051 SOL  span_h=48.0 pts=227
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0938 SOL (-93.8%)
+    delay 30s: pnl=-0.0938 SOL (-93.8%)
+DpHfXmbiPiqcA8agUnzEttFQg968xxhYBsvUivQbmoyp [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+8ybhnjBaYBWWV353huZ6LjsYEqJEBM2JEkWRKFyxpump [balanced] ts=1788695513  entry=0.000002537 SOL  pnl=-0.0991 SOL (-99.1%)  moonbag=0.0009 SOL  span_h=45.7 pts=198
+    delay 15s: pnl=-0.0989 SOL (-98.9%)
+    delay 30s: pnl=-0.0976 SOL (-97.6%)
+AjnPeDYEXH3FHR43ygN9Z5aNNMQVqkXpyQVAX6Ppump [balanced] ts=1790099414  entry=0.000000744 SOL  pnl=-0.0968 SOL (-96.8%)  moonbag=0.0032 SOL  span_h=47.7 pts=169
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0972 SOL (-97.2%)
+4JGAe6q4DjJLFrerLufsZ22njUzJXopeWTGEbR5Gpump [balanced] ts=1789106301  entry=0.000000942 SOL  pnl=-0.0624 SOL (-62.4%)  moonbag=0.0023 SOL  span_h=47.9 pts=263
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0971 SOL (-97.1%)
+    delay 30s: pnl=-0.0970 SOL (-97.0%)
+8buvs18CsfSefSKfgYkkzybgTXeLqQ3ZkcdJVdi3joQu [balanced] ts=1789444893  entry=0.000000940 SOL  pnl=-0.0979 SOL (-97.9%)  moonbag=0.0021 SOL  span_h=44.6 pts=157
+    delay 15s: pnl=-0.0976 SOL (-97.6%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+87FMmVdzWCwYTHUGvDYJhjz8Lcj5WRbGK6sDXJfTpump [balanced] ts=1789981731  entry=0.000000790 SOL  pnl=-0.0626 SOL (-62.6%)  moonbag=0.0020 SOL  span_h=47.9 pts=195
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0974 SOL (-97.4%)
+    delay 30s: pnl=-0.0626 SOL (-62.6%)
+6pei4VZghASa2zCq64UEknBE7r3asoPLFNvsDRWhR358 [balanced] ts=1789497944  entry=0.000000873 SOL  pnl=-0.0630 SOL (-63.0%)  moonbag=0.0017 SOL  span_h=47.3 pts=197
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0185 SOL (-18.5%)
+    delay 30s: pnl=-0.0185 SOL (-18.5%)
+6E8UmPnQVsYD7utPUbZdGBowisR41HFyehB4NtREpump [balanced] ts=1788271701  entry=0.000001308 SOL  pnl=-0.0635 SOL (-63.5%)  moonbag=0.0012 SOL  span_h=46.1 pts=175
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0186 SOL (-18.6%)
+    delay 30s: pnl=-0.0186 SOL (-18.6%)
+DDCimetG22tCrpsPHxoUFuzewU9EvtDp8RMAyCCoBTgj [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+DgACXKn6kSopTrFAyAwvGaeTKicrqWzLvXRYuvKGpump [balanced] ts=1790038693  entry=0.000000777 SOL  pnl=-0.0972 SOL (-97.2%)  moonbag=0.0028 SOL  span_h=45.2 pts=222
+    delay 15s: pnl=-0.0969 SOL (-96.9%)
+    delay 30s: pnl=-0.0972 SOL (-97.2%)
+AciZNVavjShSqBAWYJykVaEtBwuPrNyKCGqk8EA374tX [balanced] ts=1789501715  entry=0.000000795 SOL  pnl=-0.0626 SOL (-62.6%)  moonbag=0.0021 SOL  span_h=47.0 pts=181
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0624 SOL (-62.4%)
+    delay 30s: pnl=-0.0973 SOL (-97.3%)
+FwJNkgud84vQNq3zPycwhD6RAqSTP43f9HiVyKwJpump [balanced] ts=1789789810  entry=0.000001052 SOL  pnl=-0.0968 SOL (-96.8%)  moonbag=0.0032 SOL  span_h=47.4 pts=260
+    delay 15s: pnl=-0.0968 SOL (-96.8%)
+    delay 30s: pnl=-0.0973 SOL (-97.3%)
+9nrUsqcEPptS3gXQ1RJdHza1wQtAjuP6wqKWW2gdMBkh [balanced] ts=1789587799  entry=0.000001042 SOL  pnl=-0.0631 SOL (-63.1%)  moonbag=0.0016 SOL  span_h=46.6 pts=180
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0631 SOL (-63.1%)
+    delay 30s: pnl=-0.0983 SOL (-98.3%)
+4xjvmiKa5vzkQtaNrTV17v8PFU5mP69Hf1Kq5A9wpump [balanced] ts=1789955197  entry=0.000000863 SOL  pnl=-0.0969 SOL (-96.9%)  moonbag=0.0031 SOL  span_h=47.5 pts=219
+    delay 15s: pnl=-0.0623 SOL (-62.3%)
+    delay 30s: pnl=-0.0620 SOL (-62.0%)
+FgU8hVMmCss3biVXvmsgBiDNdYLaDHtEcXXMcCSVpump [balanced] ts=1790028272  entry=0.000000812 SOL  pnl=-0.0973 SOL (-97.3%)  moonbag=0.0027 SOL  span_h=46.5 pts=221
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0624 SOL (-62.4%)
+F4PaKuUPQ5c5QdkXqqjcprjnWXpQ2Qh4aCadobjNT4vP [balanced] ts=1788321904  entry=0.000000933 SOL  pnl=-0.0620 SOL (-62.0%)  moonbag=0.0027 SOL  span_h=46.1 pts=293
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0621 SOL (-62.1%)
+    delay 30s: pnl=-0.0970 SOL (-97.0%)
+DwE9YWm98PXnPaeYczax6yvoGKvZ6qm1V7vzsEwqpump [balanced] ts=1789754830  entry=0.000000773 SOL  pnl=-0.0626 SOL (-62.6%)  moonbag=0.0021 SOL  span_h=46.8 pts=211
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0180 SOL (-18.0%)
+    delay 30s: pnl=-0.0624 SOL (-62.4%)
+HpWnGa2UtSTmy5VU87XGm8yPKZc93P7F927LwjQ5pump [balanced] ts=1788398511  entry=0.000000900 SOL  pnl=-0.0827 SOL (-82.7%)  moonbag=0.0173 SOL  span_h=36.2 pts=143
+    delay 15s: pnl=-0.0827 SOL (-82.7%)
+    delay 30s: pnl=-0.0815 SOL (-81.5%)
+GJ6RSjJkWEo36UXtKp9zD6hq8oxbPaTx2RuubEbupump [balanced] ts=1790095782  entry=0.000000892 SOL  pnl=-0.0975 SOL (-97.5%)  moonbag=0.0025 SOL  span_h=47.6 pts=204
+    delay 15s: pnl=-0.0973 SOL (-97.3%)
+    delay 30s: pnl=-0.0958 SOL (-95.8%)
+Aj8uoW6ZQvejedM4sc21hUTFjXbjeA3X2ye7cmeRpump [balanced] ts=1789019343  entry=0.000000903 SOL  pnl=-0.0978 SOL (-97.8%)  moonbag=0.0022 SOL  span_h=33.8 pts=191
+    delay 15s: pnl=-0.0979 SOL (-97.9%)
+    delay 30s: pnl=-0.0981 SOL (-98.1%)
+CaEocTtLZCWWM8RVYbLnuKKpbuTSiNLF44CaPA8ocHBu [balanced] ts=1789643780  entry=0.000000994 SOL  pnl=-0.0967 SOL (-96.7%)  moonbag=0.0033 SOL  span_h=46.9 pts=186
+    delay 15s: pnl=-0.0970 SOL (-97.0%)
+    delay 30s: pnl=-0.0971 SOL (-97.1%)
+DcsLnCezECN49bNowJdtPc7mKrMLJ1PaVDXtTDvtmVk4 [balanced] ts=1789702379  entry=0.000001896 SOL  pnl=-0.0849 SOL (-84.9%)  moonbag=0.0151 SOL  span_h=38.8 pts=208
+    delay 15s: pnl=-0.0820 SOL (-82.0%)
+    delay 30s: pnl=-0.0465 SOL (-46.5%)
+DsHHiqNs4ffjrBmQzJbYhBqctQ3BezTRDoPoMsWJpump [balanced] ts=1789576448  entry=0.000000198 SOL  pnl=-0.0540 SOL (-54.0%)  moonbag=0.0107 SOL  span_h=46.2 pts=276
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0117 SOL (-11.7%)
+    delay 30s: pnl=-0.0524 SOL (-52.4%)
+2QmmEqXymWNZNBRwEaoD4dn7vvRRjo9LFPwjzKiQpump [balanced] ts=1789351047  entry=0.000000960 SOL  pnl=-0.0607 SOL (-60.7%)  moonbag=0.0040 SOL  span_h=48.0 pts=228
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0608 SOL (-60.8%)
+    delay 30s: pnl=-0.0953 SOL (-95.3%)
+5YR4QciAMw5NqV95Ahjpvc5F6cvqsTCZAddu4hZpBbVx [balanced] ts=1789737706  entry=0.000001043 SOL  pnl=-0.0959 SOL (-95.9%)  moonbag=0.0041 SOL  span_h=43.3 pts=176
+    delay 15s: pnl=-0.0611 SOL (-61.1%)
+    delay 30s: pnl=-0.0966 SOL (-96.6%)
+AZmw7fo4vWFKo4sAX3MWKpGAKGXuJrdFYPvM8mSEpump [balanced] ts=1789370701  entry=0.000000929 SOL  pnl=-0.0969 SOL (-96.9%)  moonbag=0.0031 SOL  span_h=47.4 pts=313
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0972 SOL (-97.2%)
+8eVJQ5nbzJ83dUh9UPLu7gto16a8iGvjyh9XYJAupump [balanced] ts=1789337914  entry=0.000001168 SOL  pnl=-0.0981 SOL (-98.1%)  moonbag=0.0019 SOL  span_h=46.8 pts=186
+    delay 15s: pnl=-0.0630 SOL (-63.0%)
+    delay 30s: pnl=-0.0981 SOL (-98.1%)
+3hchDZsUA6bdNSchqf5CWBjFxiZD1bFP2fbgJj39zgYy [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+BawkRqNzcw6DpNN73vVj1v6cQtKSVrzC3qwuRrt18cVU [balanced] ts=1789613947  entry=0.000000917 SOL  pnl=-0.0972 SOL (-97.2%)  moonbag=0.0028 SOL  span_h=47.7 pts=235
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0974 SOL (-97.4%)
+84aFBuaAPeVKoFghavbvqGfjK7iBxkC7sKCZVhuupump [balanced] ts=1789838860  entry=0.000000937 SOL  pnl=-0.0973 SOL (-97.3%)  moonbag=0.0027 SOL  span_h=45.1 pts=251
+    delay 15s: pnl=-0.0974 SOL (-97.4%)
+    delay 30s: pnl=-0.0974 SOL (-97.4%)
+5ffneJV96Q3X9jeuJTPajPSZxCWVFdssWrVTTy11pump [balanced] ts=1788266097  entry=0.000001051 SOL  pnl=-0.0972 SOL (-97.2%)  moonbag=0.0028 SOL  span_h=47.8 pts=216
+    delay 15s: pnl=-0.0973 SOL (-97.3%)
+    delay 30s: pnl=-0.0972 SOL (-97.2%)
+p5raruXYdDtwibfWkAgNdeYHQGe1nUdAGKB7EwWpump [balanced] ts=1790038066  entry=0.000000812 SOL  pnl=-0.0625 SOL (-62.5%)  moonbag=0.0022 SOL  span_h=42.4 pts=217
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0628 SOL (-62.8%)
+    delay 30s: pnl=-0.0974 SOL (-97.4%)
+7JgQ6c8sXqKJmx3fx4cA57sogVzg3YwyiZAYi3zBAF5 [balanced] ts=1789521088  entry=0.000000243 SOL  pnl=-0.0496 SOL (-49.6%)  moonbag=0.0151 SOL  span_h=43.3 pts=358
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0501 SOL (-50.1%)
+    delay 30s: pnl=-0.0829 SOL (-82.9%)
+uiQNceKYCeRn8PvA1tAksfBVb2b3aDuUVUAkMbtpump [balanced] ts=1789902853  entry=0.000000860 SOL  pnl=-0.0966 SOL (-96.6%)  moonbag=0.0034 SOL  span_h=47.3 pts=217
+    delay 15s: pnl=-0.0963 SOL (-96.3%)
+    delay 30s: pnl=-0.0958 SOL (-95.8%)
+8w689zFsegRorSrRkYzhcHrWrxhy8CFyYfCdSezHpump [balanced] ts=1789245555  entry=0.000000905 SOL  pnl=-0.0631 SOL (-63.1%)  moonbag=0.0016 SOL  span_h=46.2 pts=151
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0632 SOL (-63.2%)
+    delay 30s: pnl=-0.0982 SOL (-98.2%)
+HQhWMtL2BWx9D46dzjgR231emYZg8ahqyo5bTHqepump [balanced] ts=1789355588  entry=0.000001274 SOL  pnl=-0.0968 SOL (-96.8%)  moonbag=0.0032 SOL  span_h=47.9 pts=200
+    delay 15s: pnl=-0.0963 SOL (-96.3%)
+    delay 30s: pnl=-0.0963 SOL (-96.3%)
+EQFmAhV8Z8TQvY7rCvYmU6yJJF7KqryaxRWYhbT8VzL2 [balanced] ts=1789999652  entry=0.000000858 SOL  pnl=-0.0850 SOL (-85.0%)  moonbag=0.0150 SOL  span_h=48.0 pts=312
+    delay 15s: pnl=-0.0837 SOL (-83.7%)
+    delay 30s: pnl=-0.0844 SOL (-84.4%)
+BToR5AKvpgdsMVuM59dtGsW2e8HY2SCet8FSg8GW6tq8 [balanced] ts=1788300363  entry=0.000000882 SOL  pnl=-0.0968 SOL (-96.8%)  moonbag=0.0032 SOL  span_h=47.4 pts=197
+    delay 15s: pnl=-0.0968 SOL (-96.8%)
+    delay 30s: pnl=-0.0968 SOL (-96.8%)
+8xwevGtFghaff83B4tQNAkdzoAjNuQ5GMKxYY75MfZhu [precision] ts=1789674414  entry=0.000001300 SOL  pnl=-0.0984 SOL (-98.4%)  moonbag=0.0016 SOL  span_h=44.3 pts=142
+    delay 15s: pnl=-0.0978 SOL (-97.8%)
+    delay 30s: pnl=-0.0629 SOL (-62.9%)
+7BppB5apCYgHjf1KKCfZA4WrDjjrDMrKPVuYah7x8Qjs [balanced] ts=1788309156  entry=0.000000903 SOL  pnl=-0.0972 SOL (-97.2%)  moonbag=0.0028 SOL  span_h=45.6 pts=210
+    delay 15s: pnl=-0.0974 SOL (-97.4%)
+    delay 30s: pnl=-0.0972 SOL (-97.2%)
+DAqZZvkxcWaR17cWvXoA7n3wKTuDPhUZWQEi6Chhpump [balanced] ts=1788973620  entry=0.000000941 SOL  pnl=-0.0974 SOL (-97.4%)  moonbag=0.0026 SOL  span_h=47.9 pts=203
+    delay 15s: pnl=-0.0972 SOL (-97.2%)
+    delay 30s: pnl=-0.0973 SOL (-97.3%)
+EksoWXCCWkDRDjafaY975Gsb27BZcez2uuh8TS2opump [balanced] ts=1789044765  entry=0.000000239 SOL  pnl=-0.0564 SOL (-56.4%)  moonbag=0.0083 SOL  span_h=46.3 pts=307
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0914 SOL (-91.4%)
+    delay 30s: pnl=-0.0901 SOL (-90.1%)
+GkE46G36hvDPRQ9EbzpVJ9VMW2gkkYC4de3gvPadpump [conservative] ts=1788473121  entry=0.000001171 SOL  pnl=-0.0634 SOL (-63.4%)  moonbag=0.0013 SOL  span_h=44.8 pts=194
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0982 SOL (-98.2%)
+    delay 30s: pnl=-0.0634 SOL (-63.4%)
+KxHGHaXXb1rtkUvZ4SNG5Xv1n1fNWJv4nWEBndppump [balanced] ts=1788289455  entry=0.000000956 SOL  pnl=-0.0896 SOL (-89.6%)  moonbag=0.0104 SOL  span_h=47.9 pts=289
+    delay 15s: pnl=-0.0902 SOL (-90.2%)
+    delay 30s: pnl=-0.0902 SOL (-90.2%)
+2FDsyrqyJtkAUvDe7tbpgmjB1jaibC2wBfGs8gKPhNP4 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+CvYw81ynrNksuFfrxEmhuVqpWznU2ZKkYNoivUWopump [balanced] ts=1788531700  entry=0.000000963 SOL  pnl=-0.0529 SOL (-52.9%)  moonbag=0.0118 SOL  span_h=47.9 pts=415
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0855 SOL (-85.5%)
+    delay 30s: pnl=-0.0850 SOL (-85.0%)
+AFNHhHDorwwitTFyVCWYgWDDJD5FE2dkrQYjdswqpump [balanced] ts=1788811456  entry=0.000000857 SOL  pnl=-0.0925 SOL (-92.5%)  moonbag=0.0075 SOL  span_h=48.0 pts=292
+    delay 15s: pnl=-0.0926 SOL (-92.6%)
+    delay 30s: pnl=-0.0933 SOL (-93.3%)
+CbswbtmVia2xTwadJu1YUBT7JV7rRUEz9D4Lsg3DpvBg [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+AQ9pKadi9jA1vTofHFPrsgXjUU8C2pF8FpFpg2oMpump [balanced] ts=1788241705  entry=0.000000947 SOL  pnl=-0.0978 SOL (-97.8%)  moonbag=0.0022 SOL  span_h=38.5 pts=222
+    delay 15s: pnl=-0.0975 SOL (-97.5%)
+    delay 30s: pnl=-0.0969 SOL (-96.9%)
+3nt27RbMkJss4GWp1p6rKee9ykymUXMgfEt7KevMpump [balanced] ts=1789170968  entry=0.000000202 SOL  pnl=-0.0551 SOL (-55.1%)  moonbag=0.0096 SOL  span_h=40.8 pts=242
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0131 SOL (-13.1%)
+    delay 30s: pnl=-0.0542 SOL (-54.2%)
+8kStb3Gpk3gYbLTpaurYrJ67w6y3n8QDm1XGNwZZvzAq [balanced] ts=1789747720  entry=0.000001033 SOL  pnl=-0.0980 SOL (-98.0%)  moonbag=0.0020 SOL  span_h=47.9 pts=185
+    delay 15s: pnl=-0.0980 SOL (-98.0%)
+    delay 30s: pnl=-0.0980 SOL (-98.0%)
+F8rFVpXYtsEchbAfKChpTKAjBbtVyCnpX2yy5i7Bpump [precision] ts=1789919216  entry=0.000001018 SOL  pnl=-0.0977 SOL (-97.7%)  moonbag=0.0023 SOL  span_h=47.0 pts=236
+    delay 15s: pnl=-0.0976 SOL (-97.6%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+AGcHhhcPhC6dXiWaSRoTN2qwD92yC3djHLz1ZYcppump [balanced] ts=1789632677  entry=0.000000817 SOL  pnl=-0.0620 SOL (-62.0%)  moonbag=0.0027 SOL  span_h=47.8 pts=197
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0620 SOL (-62.0%)
+    delay 30s: pnl=-0.0616 SOL (-61.6%)
+FyM68CzuG7cSJ9Ao2JAZt1uQSVrj9SRyrnVAVnJ7pump [balanced] ts=1788287030  entry=0.000000986 SOL  pnl=-0.0964 SOL (-96.4%)  moonbag=0.0036 SOL  span_h=48.0 pts=196
+    delay 15s: pnl=-0.0961 SOL (-96.1%)
+    delay 30s: pnl=-0.0960 SOL (-96.0%)
+EQytApMuVz5fksNdZ8rJ7fm1Q7JX1NfKL6JR3jZ7pump [balanced] ts=1789709240  entry=0.000000922 SOL  pnl=-0.0973 SOL (-97.3%)  moonbag=0.0027 SOL  span_h=45.4 pts=204
+    delay 15s: pnl=-0.0971 SOL (-97.1%)
+    delay 30s: pnl=-0.0622 SOL (-62.2%)
+BF8Xrhf1mGTMKGHpLZZWkko9uZPU8cLdTHocZvaXGmzG [balanced] ts=1789656268  entry=0.000001146 SOL  pnl=-0.0959 SOL (-95.9%)  moonbag=0.0041 SOL  span_h=48.0 pts=214
+    delay 15s: pnl=-0.0954 SOL (-95.4%)
+    delay 30s: pnl=-0.0954 SOL (-95.4%)
+GfqpMW4WyARXbFcC9Z6LguuF9fNdDnVbT2K9Risvpump [balanced] ts=1788738064  entry=0.000001040 SOL  pnl=-0.0975 SOL (-97.5%)  moonbag=0.0025 SOL  span_h=45.5 pts=250
+    delay 15s: pnl=-0.0628 SOL (-62.8%)
+    delay 30s: pnl=-0.0629 SOL (-62.9%)
+CBFRHeKiU7STP3dPisvmnukRynp51spxj455GRqRKtBT [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+8qrYiYSosdQvZvUMpQAmxXf3v1Uhp9bSgAcewVofWet4 [balanced] -- NO PUMP.FUN/PUMPSWAP TRADES FOUND
+25zrhpHif2nxwH3dYraqAA64AeRdRj2keo1oNpsdpump [balanced] ts=1789415378  entry=0.000000844 SOL  pnl=-0.0628 SOL (-62.8%)  moonbag=0.0019 SOL  span_h=46.5 pts=116
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0627 SOL (-62.7%)
+    delay 30s: pnl=-0.0976 SOL (-97.6%)
+3pMiN3dB1xjgVsgJCjoLUQFTB6Qo3YXGF7wdfoyB6tGA [balanced] ts=1789780889  entry=0.000000863 SOL  pnl=-0.0971 SOL (-97.1%)  moonbag=0.0029 SOL  span_h=46.3 pts=221
+    delay 15s: pnl=-0.0973 SOL (-97.3%)
+    delay 30s: pnl=-0.0969 SOL (-96.9%)
+7AUzu756Pp3Cg3NByuKfcRSAFFt31kjC6U6R1npkiA1Q [balanced] ts=1790033335  entry=0.000000757 SOL  pnl=-0.0617 SOL (-61.7%)  moonbag=0.0030 SOL  span_h=47.5 pts=241
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0967 SOL (-96.7%)
+    delay 30s: pnl=-0.0967 SOL (-96.7%)
+C8U9aPpuXmHqjvdQX57uJMxKzjETkbrmYDm7eQ6fpump [balanced] ts=1789222640  entry=0.000000945 SOL  pnl=-0.0979 SOL (-97.9%)  moonbag=0.0021 SOL  span_h=45.6 pts=211
+    delay 15s: pnl=-0.0979 SOL (-97.9%)
+    delay 30s: pnl=-0.0977 SOL (-97.7%)
+34eiVk6vfLctP8FKQQ5y5hvZLA6pQJioXci4dVuDpump [balanced] ts=1788703663  entry=0.000000884 SOL  pnl=-0.0759 SOL (-75.9%)  moonbag=0.0241 SOL  span_h=48.0 pts=268
+    delay 15s: pnl=-0.0765 SOL (-76.5%)
+    delay 30s: pnl=-0.0759 SOL (-75.9%)
+3i43bRLKSomUXyin1jgGsd3y9MgBW1cdX3nh43YD3W4R [balanced] ts=1790124168  entry=0.000003140 SOL  pnl=-0.0989 SOL (-98.9%)  moonbag=0.0011 SOL  span_h=47.2 pts=161
+    delay 15s: pnl=-0.0989 SOL (-98.9%)
+    delay 30s: pnl=-0.0990 SOL (-99.0%)
+AUTgNuikE6tPVM6LsdEnpDMWybjruVkmmiZFKCuwpump [balanced] ts=1789489299  entry=0.000001072 SOL  pnl=-0.0981 SOL (-98.1%)  moonbag=0.0019 SOL  span_h=47.2 pts=183
+    delay 15s: pnl=-0.0980 SOL (-98.0%)
+    delay 30s: pnl=-0.0980 SOL (-98.0%)
+5ZmV93QLXmoaTjo4tp8HLWQC1La9u72ncb8hjn7zpump [precision] ts=1789569966  entry=0.000001126 SOL  pnl=-0.0949 SOL (-94.9%)  moonbag=0.0051 SOL  span_h=41.3 pts=322
+    delay 15s: pnl=-0.0951 SOL (-95.1%)
+    delay 30s: pnl=-0.0951 SOL (-95.1%)
+FfyrCrkcdARKhGmPYoCQCcwsn4Eb1kbtww3JwSEYpump [balanced] ts=1789085822  entry=0.000000995 SOL  pnl=-0.0977 SOL (-97.7%)  moonbag=0.0023 SOL  span_h=47.4 pts=168
+    delay 15s: pnl=-0.0628 SOL (-62.8%)
+    delay 30s: pnl=-0.0629 SOL (-62.9%)
+3WcPnm5dzhx76Au7RAR1XmA57idUBrCqhtnV2oGwD6Mp [balanced] ts=1789864345  entry=0.000000894 SOL  pnl=-0.0977 SOL (-97.7%)  moonbag=0.0023 SOL  span_h=46.1 pts=185
+    delay 15s: pnl=-0.0973 SOL (-97.3%)
+    delay 30s: pnl=-0.0973 SOL (-97.3%)
+Ger9QLqe1RhWixofqm1nvFzpK4v99BPFaUbHpAG4pump [balanced] ts=1789176319  entry=0.000000948 SOL  pnl=-0.0628 SOL (-62.8%)  moonbag=0.0019 SOL  span_h=46.7 pts=278
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0975 SOL (-97.5%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+8F32oW8zuwzRRGjkUH1NwE8RWsxvRapcg5MwRFpRTX26 [precision] ts=1788816458  entry=0.000000993 SOL  pnl=-0.0968 SOL (-96.8%)  moonbag=0.0032 SOL  span_h=47.8 pts=204
+    delay 15s: pnl=-0.0967 SOL (-96.7%)
+    delay 30s: pnl=-0.0971 SOL (-97.1%)
+DMcS6oiUNKTQKjYKPuKvZbTU9d69oQsta2CWLCb7pump [balanced] ts=1789946234  entry=0.000000889 SOL  pnl=-0.0973 SOL (-97.3%)  moonbag=0.0027 SOL  span_h=45.2 pts=277
+    delay 15s: pnl=-0.0626 SOL (-62.6%)
+    delay 30s: pnl=-0.0973 SOL (-97.3%)
+Fa4xG765c2TsCCaMvBNa6eqM8Av3r3zY9CD3AVuYpump [balanced] ts=1788447603  entry=0.000000855 SOL  pnl=-0.0956 SOL (-95.6%)  moonbag=0.0044 SOL  span_h=47.2 pts=208
+    delay 15s: pnl=-0.0954 SOL (-95.4%)
+    delay 30s: pnl=-0.0947 SOL (-94.7%)
+1MxFhpSirbshMDiJTkuk5ZDy9qNRDFPwvvKM8VYpump [balanced] ts=1789992723  entry=0.000000819 SOL  pnl=-0.0971 SOL (-97.1%)  moonbag=0.0029 SOL  span_h=38.6 pts=137
+    delay 15s: pnl=-0.0976 SOL (-97.6%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+7eC91EZNA6JUQRBihTy2eCx246zy4vdEb8M6zzpn7g18 [balanced] ts=1789510773  entry=0.000000917 SOL  pnl=-0.0612 SOL (-61.2%)  moonbag=0.0035 SOL  span_h=47.9 pts=255
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0953 SOL (-95.3%)
+    delay 30s: pnl=-0.0956 SOL (-95.6%)
+7yVv1khNz9GzRTQBdBYRyTTTmXvSqYKcpi3EoTC3pump [balanced] ts=1789842807  entry=0.000000187 SOL  pnl=-0.0541 SOL (-54.1%)  moonbag=0.0106 SOL  span_h=28.1 pts=281
+    leg 1: fired at 1.25x, returned 0.0353 SOL
+    delay 15s: pnl=-0.0538 SOL (-53.8%)
+    delay 30s: pnl=-0.0535 SOL (-53.5%)
+9STRqKGLFmjupPtVo5VhnQHkGn7vV57W3jVPzQes5Vih [balanced] ts=1789709572  entry=0.000000279 SOL  pnl=-0.0900 SOL (-90.0%)  moonbag=0.0100 SOL  span_h=45.9 pts=183
+    delay 15s: pnl=-0.0880 SOL (-88.0%)
+    delay 30s: pnl=-0.0886 SOL (-88.6%)
+2NEqdaNxeYhYCsMd1pQfoG8ws5Nc1A5pJECCkbnopump [balanced] ts=1788235430  entry=0.000000920 SOL  pnl=-0.0971 SOL (-97.1%)  moonbag=0.0029 SOL  span_h=46.4 pts=185
+    delay 15s: pnl=-0.0973 SOL (-97.3%)
+    delay 30s: pnl=-0.0971 SOL (-97.1%)
+uRjcWjr52UF43zqtLyU4Sqoxwa9qUkaHWVZJahJQMHN [balanced] ts=1790072045  entry=0.000000801 SOL  pnl=-0.0973 SOL (-97.3%)  moonbag=0.0027 SOL  span_h=42.7 pts=162
+    delay 15s: pnl=-0.0968 SOL (-96.8%)
+    delay 30s: pnl=-0.0966 SOL (-96.6%)
+FuMvkfmjwYG5jsQ7wQkEaVi8dXuQo6QNvbyQqCm6pump [balanced] ts=1789141561  entry=0.000001108 SOL  pnl=-0.0981 SOL (-98.1%)  moonbag=0.0019 SOL  span_h=43.1 pts=242
+    delay 15s: pnl=-0.0977 SOL (-97.7%)
+    delay 30s: pnl=-0.0975 SOL (-97.5%)
+CXqbrq3K81wRAj3AqJaPLq19hXdisAT1iLhjHhyBb5Ma [balanced] ts=1789782917  entry=0.000000824 SOL  pnl=-0.0974 SOL (-97.4%)  moonbag=0.0026 SOL  span_h=44.1 pts=175
+    delay 15s: pnl=-0.0976 SOL (-97.6%)
+    delay 30s: pnl=-0.0978 SOL (-97.8%)
+
+Per-call results table written to small_part_01_results.csv
